@@ -54,10 +54,16 @@ Browser emulation does not establish physical-phone behavior. Development-server
 
 The full SEC collection passed for AMD, AAPL, MSFT, CAT, TXN, AGX, and AMZN. Each record includes ten annual periods from Company Facts and facts parsed from five annual filings plus the latest subsequent quarterly filing. Original source bodies are archived. The accepted run is recorded in `src/data/collection-report.json`.
 
+GitHub-hosted [run 41546039256](https://github.com/KingofSalem33/value-finder/actions/runs/41546039256) passed collection, parser tests, calculation tests, record acceptance, source packaging, and the production build. It committed the accepted records. This proves one manual hosted run; it does not prove future schedule timing or automatic deployment.
+
+The production deployment of source commit `cb84b26` passed all seven live API checks. Model version, input digests, collection timestamps, scenario calculations, and price independence matched the accepted records. The public source ZIP and an archived AMD collected-source record matched their local hashes. Unsupported symbols returned 404; malformed symbols returned 400, both with an error message.
+
+The production browser passed AMD search, manual-price independence, analyst growth edits, automatic reset, invalid WACC withholding and recovery, and CAT's specialized-model refusal. At 390 by 844 pixels, the page had no horizontal overflow. No page exceptions occurred during the measured AMD checks. Physical-phone behavior remains unproven. Each later deployment must repeat the live parity check.
+
 Still required:
 
-1. Run the hosted job and verify its source-access behavior before relying on scheduled collection.
+1. Connect the existing Vercel project for automatic Git deployment before relying on a scheduled data commit to update the site. Current releases use explicit deployments of accepted commits.
 2. Verify each deployment with `npm run verify:live`. This checks live model version, record digests, collection times, calculations, and expected coverage against the accepted local records. It writes its report to ignored `output/verification/live-report.json`.
-3. Check search and analyst edits in the deployed browser. Browser emulation does not prove physical-phone behavior.
+3. Verify a scheduled run and physical-phone behavior separately.
 
-Local checks do not prove hosted collection or Git-triggered deployment. No automatic output receives VERIFIED INPUTS. Full CFO-to-FCFF reconciliation, investment duration, segment forecasts, normalization schedules, current company credit yields, and dated professional fair-value comparisons remain analyst review items.
+No Git-triggered deployment is claimed. No automatic output receives VERIFIED INPUTS. Full CFO-to-FCFF reconciliation, investment duration, segment forecasts, normalization schedules, current company credit yields, and dated professional fair-value comparisons remain analyst review items.

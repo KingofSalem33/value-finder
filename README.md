@@ -66,9 +66,9 @@ Collection candidates stay in ignored `output/collection`. `build:records` verif
 
 [The GitHub Actions workflow](.github/workflows/research.yml) runs checks on source changes. Scheduled and manual runs also collect, refresh references, accept records, build, and commit the accepted data. The schedule is 12:17 UTC daily; GitHub can delay scheduled runs.
 
-The workflow is limited to public repositories so standard hosted runners remain free. It requires a repository secret named `SEC_USER_AGENT`. Local collection has passed. Hosted collection and automatic deployment require separate verification; a successful local run does not prove runner access to the SEC.
+The workflow is limited to public repositories so standard hosted runners remain free. It requires a repository secret named `SEC_USER_AGENT`. Local collection and a manual GitHub-hosted run passed on November 2, 2026. The hosted run collected all seven companies, passed acceptance and production-build checks, and committed its records. Scheduled execution timing remains unproven.
 
-Deploy this repository's tested commit to the existing Vercel project `value-finder-research`. Confirm the accepted record hashes and model version with `npm run verify:live`. The website requires no financial-provider environment variables. Connect Git deployments before relying on a scheduled data commit to update the public site.
+Deploy this repository's tested commit to the existing Vercel project `value-finder-research`. Confirm the accepted record hashes and model version with `npm run verify:live`. The website requires no financial-provider environment variables. The existing project is not connected for automatic Git deployments: a scheduled data commit alone does not update the public site. Each release currently requires an explicit deployment of the accepted commit.
 
 At this coverage size, deployed files are sufficient. A larger universe or materially larger archive is a reason to reassess storage. No paid service is required by this design.
 
