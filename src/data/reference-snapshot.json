@@ -1,0 +1,1208 @@
+{
+  "Semiconductor": {
+    "industry": {
+      "name": "Semiconductor",
+      "unleveredBeta": 1.49,
+      "debtEquity": 0.0259,
+      "margin": 0.3533,
+      "roic": 0.2053,
+      "salesCapital": 1.21,
+      "costDebt": 0.0529
+    },
+    "references": [
+      {
+        "name": "US Treasury — 10-year par yield",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+        "asOf": "2026-11-02",
+        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "values": {
+          "treasury": 0.049100000000000005,
+          "convention": "Unadjusted US Treasury proxy",
+          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
+          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+        }
+      },
+      {
+        "name": "Damodaran — US marginal tax",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+        "asOf": "January 5, 2026",
+        "retrievedAt": "2026-11-02T21:59:41.401Z",
+        "values": {
+          "marginalTax": 0.25,
+          "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+          "archive": "/filings/ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Semiconductor — Betas",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:44.110Z",
+        "values": {
+          "industry": "Semiconductor",
+          "unleveredBeta": 1.49,
+          "debtEquity": 0.0259,
+          "sha256": "10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b",
+          "archive": "/filings/10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Semiconductor — margin",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/margin.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:44.729Z",
+        "values": {
+          "industry": "Semiconductor",
+          "margin": 0.3533,
+          "sha256": "56c79e830dff33433c1ee66cea14ab2156d465a8de349d734f40235899bf1090",
+          "archive": "/filings/56c79e830dff33433c1ee66cea14ab2156d465a8de349d734f40235899bf1090.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Semiconductor — roc",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:45.198Z",
+        "values": {
+          "industry": "Semiconductor",
+          "roic": 0.2053,
+          "sha256": "c8942907e054cafa6eaff4005a94337fbd7dcf96ffb4b48a9696e45f7ba9c252",
+          "archive": "/filings/c8942907e054cafa6eaff4005a94337fbd7dcf96ffb4b48a9696e45f7ba9c252.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Semiconductor — capex",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/capex.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:45.714Z",
+        "values": {
+          "industry": "Semiconductor",
+          "salesCapital": 1.21,
+          "sha256": "713eaa7f0f99997d9e3fa60249adc3547cc0934929f4a875ec94869c17806209",
+          "archive": "/filings/713eaa7f0f99997d9e3fa60249adc3547cc0934929f4a875ec94869c17806209.gz"
+        }
+      },
+      {
+        "name": "Damodaran — monthly implied ERP",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
+        "asOf": "2026-11-01",
+        "retrievedAt": "2026-11-02T21:59:41.679Z",
+        "values": {
+          "erp": 0.0441,
+          "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
+          "sourceTreasury": 0.0529,
+          "sha256": "9e39dfdebe1d02540b6fa7f6c5733c57b533eb4bf58ab3ffed9d014c6772a972",
+          "archive": "/filings/9e39dfdebe1d02540b6fa7f6c5733c57b533eb4bf58ab3ffed9d014c6772a972.gz"
+        }
+      },
+      {
+        "name": "Damodaran — synthetic credit spreads",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ratings.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:42.054Z",
+        "values": {
+          "table": "Large nonfinancial service firms",
+          "spreads": "[{\"lower\":-100000,\"rating\":\"D2/D\",\"spread\":0.19},{\"lower\":0.2,\"rating\":\"C2/C\",\"spread\":0.16},{\"lower\":0.65,\"rating\":\"Ca2/CC\",\"spread\":0.1261},{\"lower\":0.8,\"rating\":\"Caa/CCC\",\"spread\":0.0885},{\"lower\":1.25,\"rating\":\"B3/B-\",\"spread\":0.0509},{\"lower\":1.5,\"rating\":\"B2/B\",\"spread\":0.0321},{\"lower\":1.75,\"rating\":\"B1/B+\",\"spread\":0.0275},{\"lower\":2,\"rating\":\"Ba2/BB\",\"spread\":0.0184},{\"lower\":2.25,\"rating\":\"Ba1/BB+\",\"spread\":0.0138},{\"lower\":2.5,\"rating\":\"Baa2/BBB\",\"spread\":0.0111},{\"lower\":3,\"rating\":\"A3/A-\",\"spread\":0.0089},{\"lower\":4.25,\"rating\":\"A2/A\",\"spread\":0.0078000000000000005},{\"lower\":5.5,\"rating\":\"A1/A+\",\"spread\":0.006999999999999999},{\"lower\":6.5,\"rating\":\"Aa2/AA\",\"spread\":0.0055000000000000005},{\"lower\":8.5,\"rating\":\"Aaa/AAA\",\"spread\":0.004}]",
+          "sha256": "71d5dba40bd0659b7d6fe6f0e2d25036442d66b3c5e309480d0c9b48b2c3ba63",
+          "archive": "/filings/71d5dba40bd0659b7d6fe6f0e2d25036442d66b3c5e309480d0c9b48b2c3ba63.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Semiconductor — borrowing cost",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/wacc.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:46.274Z",
+        "values": {
+          "costDebt": 0.0529,
+          "sha256": "04a4dd2188cbc9081d232b14599c299487ca67d54fb8e7e397bc4b8a2246d8e8",
+          "archive": "/filings/04a4dd2188cbc9081d232b14599c299487ca67d54fb8e7e397bc4b8a2246d8e8.gz"
+        }
+      }
+    ],
+    "riskFree": 0.049100000000000005,
+    "erp": 0.0441,
+    "marginalTax": 0.25,
+    "creditSpreads": [
+      {
+        "lower": -100000,
+        "rating": "D2/D",
+        "spread": 0.19
+      },
+      {
+        "lower": 0.2,
+        "rating": "C2/C",
+        "spread": 0.16
+      },
+      {
+        "lower": 0.65,
+        "rating": "Ca2/CC",
+        "spread": 0.1261
+      },
+      {
+        "lower": 0.8,
+        "rating": "Caa/CCC",
+        "spread": 0.0885
+      },
+      {
+        "lower": 1.25,
+        "rating": "B3/B-",
+        "spread": 0.0509
+      },
+      {
+        "lower": 1.5,
+        "rating": "B2/B",
+        "spread": 0.0321
+      },
+      {
+        "lower": 1.75,
+        "rating": "B1/B+",
+        "spread": 0.0275
+      },
+      {
+        "lower": 2,
+        "rating": "Ba2/BB",
+        "spread": 0.0184
+      },
+      {
+        "lower": 2.25,
+        "rating": "Ba1/BB+",
+        "spread": 0.0138
+      },
+      {
+        "lower": 2.5,
+        "rating": "Baa2/BBB",
+        "spread": 0.0111
+      },
+      {
+        "lower": 3,
+        "rating": "A3/A-",
+        "spread": 0.0089
+      },
+      {
+        "lower": 4.25,
+        "rating": "A2/A",
+        "spread": 0.0078000000000000005
+      },
+      {
+        "lower": 5.5,
+        "rating": "A1/A+",
+        "spread": 0.006999999999999999
+      },
+      {
+        "lower": 6.5,
+        "rating": "Aa2/AA",
+        "spread": 0.0055000000000000005
+      },
+      {
+        "lower": 8.5,
+        "rating": "Aaa/AAA",
+        "spread": 0.004
+      }
+    ]
+  },
+  "Computers/Peripherals": {
+    "industry": {
+      "name": "Computers/Peripherals",
+      "unleveredBeta": 1.31,
+      "debtEquity": 0.0462,
+      "margin": 0.2248,
+      "roic": 0.4978,
+      "salesCapital": 3.62,
+      "costDebt": 0.0529
+    },
+    "references": [
+      {
+        "name": "US Treasury — 10-year par yield",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+        "asOf": "2026-11-02",
+        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "values": {
+          "treasury": 0.049100000000000005,
+          "convention": "Unadjusted US Treasury proxy",
+          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
+          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+        }
+      },
+      {
+        "name": "Damodaran — US marginal tax",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+        "asOf": "January 5, 2026",
+        "retrievedAt": "2026-11-02T21:59:41.401Z",
+        "values": {
+          "marginalTax": 0.25,
+          "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+          "archive": "/filings/ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Computers/Peripherals — Betas",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:44.110Z",
+        "values": {
+          "industry": "Computers/Peripherals",
+          "unleveredBeta": 1.31,
+          "debtEquity": 0.0462,
+          "sha256": "10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b",
+          "archive": "/filings/10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Computers/Peripherals — margin",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/margin.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:44.729Z",
+        "values": {
+          "industry": "Computers/Peripherals",
+          "margin": 0.2248,
+          "sha256": "56c79e830dff33433c1ee66cea14ab2156d465a8de349d734f40235899bf1090",
+          "archive": "/filings/56c79e830dff33433c1ee66cea14ab2156d465a8de349d734f40235899bf1090.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Computers/Peripherals — roc",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:45.198Z",
+        "values": {
+          "industry": "Computers/Peripherals",
+          "roic": 0.4978,
+          "sha256": "c8942907e054cafa6eaff4005a94337fbd7dcf96ffb4b48a9696e45f7ba9c252",
+          "archive": "/filings/c8942907e054cafa6eaff4005a94337fbd7dcf96ffb4b48a9696e45f7ba9c252.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Computers/Peripherals — capex",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/capex.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:45.714Z",
+        "values": {
+          "industry": "Computers/Peripherals",
+          "salesCapital": 3.62,
+          "sha256": "713eaa7f0f99997d9e3fa60249adc3547cc0934929f4a875ec94869c17806209",
+          "archive": "/filings/713eaa7f0f99997d9e3fa60249adc3547cc0934929f4a875ec94869c17806209.gz"
+        }
+      },
+      {
+        "name": "Damodaran — monthly implied ERP",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
+        "asOf": "2026-11-01",
+        "retrievedAt": "2026-11-02T21:59:41.679Z",
+        "values": {
+          "erp": 0.0441,
+          "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
+          "sourceTreasury": 0.0529,
+          "sha256": "9e39dfdebe1d02540b6fa7f6c5733c57b533eb4bf58ab3ffed9d014c6772a972",
+          "archive": "/filings/9e39dfdebe1d02540b6fa7f6c5733c57b533eb4bf58ab3ffed9d014c6772a972.gz"
+        }
+      },
+      {
+        "name": "Damodaran — synthetic credit spreads",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ratings.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:42.054Z",
+        "values": {
+          "table": "Large nonfinancial service firms",
+          "spreads": "[{\"lower\":-100000,\"rating\":\"D2/D\",\"spread\":0.19},{\"lower\":0.2,\"rating\":\"C2/C\",\"spread\":0.16},{\"lower\":0.65,\"rating\":\"Ca2/CC\",\"spread\":0.1261},{\"lower\":0.8,\"rating\":\"Caa/CCC\",\"spread\":0.0885},{\"lower\":1.25,\"rating\":\"B3/B-\",\"spread\":0.0509},{\"lower\":1.5,\"rating\":\"B2/B\",\"spread\":0.0321},{\"lower\":1.75,\"rating\":\"B1/B+\",\"spread\":0.0275},{\"lower\":2,\"rating\":\"Ba2/BB\",\"spread\":0.0184},{\"lower\":2.25,\"rating\":\"Ba1/BB+\",\"spread\":0.0138},{\"lower\":2.5,\"rating\":\"Baa2/BBB\",\"spread\":0.0111},{\"lower\":3,\"rating\":\"A3/A-\",\"spread\":0.0089},{\"lower\":4.25,\"rating\":\"A2/A\",\"spread\":0.0078000000000000005},{\"lower\":5.5,\"rating\":\"A1/A+\",\"spread\":0.006999999999999999},{\"lower\":6.5,\"rating\":\"Aa2/AA\",\"spread\":0.0055000000000000005},{\"lower\":8.5,\"rating\":\"Aaa/AAA\",\"spread\":0.004}]",
+          "sha256": "71d5dba40bd0659b7d6fe6f0e2d25036442d66b3c5e309480d0c9b48b2c3ba63",
+          "archive": "/filings/71d5dba40bd0659b7d6fe6f0e2d25036442d66b3c5e309480d0c9b48b2c3ba63.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Computers/Peripherals — borrowing cost",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/wacc.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:46.274Z",
+        "values": {
+          "costDebt": 0.0529,
+          "sha256": "04a4dd2188cbc9081d232b14599c299487ca67d54fb8e7e397bc4b8a2246d8e8",
+          "archive": "/filings/04a4dd2188cbc9081d232b14599c299487ca67d54fb8e7e397bc4b8a2246d8e8.gz"
+        }
+      }
+    ],
+    "riskFree": 0.049100000000000005,
+    "erp": 0.0441,
+    "marginalTax": 0.25,
+    "creditSpreads": [
+      {
+        "lower": -100000,
+        "rating": "D2/D",
+        "spread": 0.19
+      },
+      {
+        "lower": 0.2,
+        "rating": "C2/C",
+        "spread": 0.16
+      },
+      {
+        "lower": 0.65,
+        "rating": "Ca2/CC",
+        "spread": 0.1261
+      },
+      {
+        "lower": 0.8,
+        "rating": "Caa/CCC",
+        "spread": 0.0885
+      },
+      {
+        "lower": 1.25,
+        "rating": "B3/B-",
+        "spread": 0.0509
+      },
+      {
+        "lower": 1.5,
+        "rating": "B2/B",
+        "spread": 0.0321
+      },
+      {
+        "lower": 1.75,
+        "rating": "B1/B+",
+        "spread": 0.0275
+      },
+      {
+        "lower": 2,
+        "rating": "Ba2/BB",
+        "spread": 0.0184
+      },
+      {
+        "lower": 2.25,
+        "rating": "Ba1/BB+",
+        "spread": 0.0138
+      },
+      {
+        "lower": 2.5,
+        "rating": "Baa2/BBB",
+        "spread": 0.0111
+      },
+      {
+        "lower": 3,
+        "rating": "A3/A-",
+        "spread": 0.0089
+      },
+      {
+        "lower": 4.25,
+        "rating": "A2/A",
+        "spread": 0.0078000000000000005
+      },
+      {
+        "lower": 5.5,
+        "rating": "A1/A+",
+        "spread": 0.006999999999999999
+      },
+      {
+        "lower": 6.5,
+        "rating": "Aa2/AA",
+        "spread": 0.0055000000000000005
+      },
+      {
+        "lower": 8.5,
+        "rating": "Aaa/AAA",
+        "spread": 0.004
+      }
+    ]
+  },
+  "Software (System & Application)": {
+    "industry": {
+      "name": "Software (System & Application)",
+      "unleveredBeta": 1.23,
+      "debtEquity": 0.0558,
+      "margin": 0.3298,
+      "roic": 0.22949999999999998,
+      "salesCapital": 1.54,
+      "costDebt": 0.0529
+    },
+    "references": [
+      {
+        "name": "US Treasury — 10-year par yield",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+        "asOf": "2026-11-02",
+        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "values": {
+          "treasury": 0.049100000000000005,
+          "convention": "Unadjusted US Treasury proxy",
+          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
+          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+        }
+      },
+      {
+        "name": "Damodaran — US marginal tax",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+        "asOf": "January 5, 2026",
+        "retrievedAt": "2026-11-02T21:59:41.401Z",
+        "values": {
+          "marginalTax": 0.25,
+          "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+          "archive": "/filings/ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Software (System & Application) — Betas",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:44.110Z",
+        "values": {
+          "industry": "Software (System & Application)",
+          "unleveredBeta": 1.23,
+          "debtEquity": 0.0558,
+          "sha256": "10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b",
+          "archive": "/filings/10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Software (System & Application) — margin",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/margin.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:44.729Z",
+        "values": {
+          "industry": "Software (System & Application)",
+          "margin": 0.3298,
+          "sha256": "56c79e830dff33433c1ee66cea14ab2156d465a8de349d734f40235899bf1090",
+          "archive": "/filings/56c79e830dff33433c1ee66cea14ab2156d465a8de349d734f40235899bf1090.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Software (System & Application) — roc",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:45.198Z",
+        "values": {
+          "industry": "Software (System & Application)",
+          "roic": 0.22949999999999998,
+          "sha256": "c8942907e054cafa6eaff4005a94337fbd7dcf96ffb4b48a9696e45f7ba9c252",
+          "archive": "/filings/c8942907e054cafa6eaff4005a94337fbd7dcf96ffb4b48a9696e45f7ba9c252.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Software (System & Application) — capex",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/capex.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:45.714Z",
+        "values": {
+          "industry": "Software (System & Application)",
+          "salesCapital": 1.54,
+          "sha256": "713eaa7f0f99997d9e3fa60249adc3547cc0934929f4a875ec94869c17806209",
+          "archive": "/filings/713eaa7f0f99997d9e3fa60249adc3547cc0934929f4a875ec94869c17806209.gz"
+        }
+      },
+      {
+        "name": "Damodaran — monthly implied ERP",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
+        "asOf": "2026-11-01",
+        "retrievedAt": "2026-11-02T21:59:41.679Z",
+        "values": {
+          "erp": 0.0441,
+          "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
+          "sourceTreasury": 0.0529,
+          "sha256": "9e39dfdebe1d02540b6fa7f6c5733c57b533eb4bf58ab3ffed9d014c6772a972",
+          "archive": "/filings/9e39dfdebe1d02540b6fa7f6c5733c57b533eb4bf58ab3ffed9d014c6772a972.gz"
+        }
+      },
+      {
+        "name": "Damodaran — synthetic credit spreads",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ratings.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:42.054Z",
+        "values": {
+          "table": "Large nonfinancial service firms",
+          "spreads": "[{\"lower\":-100000,\"rating\":\"D2/D\",\"spread\":0.19},{\"lower\":0.2,\"rating\":\"C2/C\",\"spread\":0.16},{\"lower\":0.65,\"rating\":\"Ca2/CC\",\"spread\":0.1261},{\"lower\":0.8,\"rating\":\"Caa/CCC\",\"spread\":0.0885},{\"lower\":1.25,\"rating\":\"B3/B-\",\"spread\":0.0509},{\"lower\":1.5,\"rating\":\"B2/B\",\"spread\":0.0321},{\"lower\":1.75,\"rating\":\"B1/B+\",\"spread\":0.0275},{\"lower\":2,\"rating\":\"Ba2/BB\",\"spread\":0.0184},{\"lower\":2.25,\"rating\":\"Ba1/BB+\",\"spread\":0.0138},{\"lower\":2.5,\"rating\":\"Baa2/BBB\",\"spread\":0.0111},{\"lower\":3,\"rating\":\"A3/A-\",\"spread\":0.0089},{\"lower\":4.25,\"rating\":\"A2/A\",\"spread\":0.0078000000000000005},{\"lower\":5.5,\"rating\":\"A1/A+\",\"spread\":0.006999999999999999},{\"lower\":6.5,\"rating\":\"Aa2/AA\",\"spread\":0.0055000000000000005},{\"lower\":8.5,\"rating\":\"Aaa/AAA\",\"spread\":0.004}]",
+          "sha256": "71d5dba40bd0659b7d6fe6f0e2d25036442d66b3c5e309480d0c9b48b2c3ba63",
+          "archive": "/filings/71d5dba40bd0659b7d6fe6f0e2d25036442d66b3c5e309480d0c9b48b2c3ba63.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Software (System & Application) — borrowing cost",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/wacc.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:46.274Z",
+        "values": {
+          "costDebt": 0.0529,
+          "sha256": "04a4dd2188cbc9081d232b14599c299487ca67d54fb8e7e397bc4b8a2246d8e8",
+          "archive": "/filings/04a4dd2188cbc9081d232b14599c299487ca67d54fb8e7e397bc4b8a2246d8e8.gz"
+        }
+      }
+    ],
+    "riskFree": 0.049100000000000005,
+    "erp": 0.0441,
+    "marginalTax": 0.25,
+    "creditSpreads": [
+      {
+        "lower": -100000,
+        "rating": "D2/D",
+        "spread": 0.19
+      },
+      {
+        "lower": 0.2,
+        "rating": "C2/C",
+        "spread": 0.16
+      },
+      {
+        "lower": 0.65,
+        "rating": "Ca2/CC",
+        "spread": 0.1261
+      },
+      {
+        "lower": 0.8,
+        "rating": "Caa/CCC",
+        "spread": 0.0885
+      },
+      {
+        "lower": 1.25,
+        "rating": "B3/B-",
+        "spread": 0.0509
+      },
+      {
+        "lower": 1.5,
+        "rating": "B2/B",
+        "spread": 0.0321
+      },
+      {
+        "lower": 1.75,
+        "rating": "B1/B+",
+        "spread": 0.0275
+      },
+      {
+        "lower": 2,
+        "rating": "Ba2/BB",
+        "spread": 0.0184
+      },
+      {
+        "lower": 2.25,
+        "rating": "Ba1/BB+",
+        "spread": 0.0138
+      },
+      {
+        "lower": 2.5,
+        "rating": "Baa2/BBB",
+        "spread": 0.0111
+      },
+      {
+        "lower": 3,
+        "rating": "A3/A-",
+        "spread": 0.0089
+      },
+      {
+        "lower": 4.25,
+        "rating": "A2/A",
+        "spread": 0.0078000000000000005
+      },
+      {
+        "lower": 5.5,
+        "rating": "A1/A+",
+        "spread": 0.006999999999999999
+      },
+      {
+        "lower": 6.5,
+        "rating": "Aa2/AA",
+        "spread": 0.0055000000000000005
+      },
+      {
+        "lower": 8.5,
+        "rating": "Aaa/AAA",
+        "spread": 0.004
+      }
+    ]
+  },
+  "Machinery": {
+    "industry": {
+      "name": "Machinery",
+      "unleveredBeta": 0.87,
+      "debtEquity": 0.1469,
+      "margin": 0.1586,
+      "roic": 0.2659,
+      "salesCapital": 1.95,
+      "costDebt": 0.0529
+    },
+    "references": [
+      {
+        "name": "US Treasury — 10-year par yield",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+        "asOf": "2026-11-02",
+        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "values": {
+          "treasury": 0.049100000000000005,
+          "convention": "Unadjusted US Treasury proxy",
+          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
+          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+        }
+      },
+      {
+        "name": "Damodaran — US marginal tax",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+        "asOf": "January 5, 2026",
+        "retrievedAt": "2026-11-02T21:59:41.401Z",
+        "values": {
+          "marginalTax": 0.25,
+          "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+          "archive": "/filings/ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Machinery — Betas",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:44.110Z",
+        "values": {
+          "industry": "Machinery",
+          "unleveredBeta": 0.87,
+          "debtEquity": 0.1469,
+          "sha256": "10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b",
+          "archive": "/filings/10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Machinery — margin",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/margin.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:44.729Z",
+        "values": {
+          "industry": "Machinery",
+          "margin": 0.1586,
+          "sha256": "56c79e830dff33433c1ee66cea14ab2156d465a8de349d734f40235899bf1090",
+          "archive": "/filings/56c79e830dff33433c1ee66cea14ab2156d465a8de349d734f40235899bf1090.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Machinery — roc",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:45.198Z",
+        "values": {
+          "industry": "Machinery",
+          "roic": 0.2659,
+          "sha256": "c8942907e054cafa6eaff4005a94337fbd7dcf96ffb4b48a9696e45f7ba9c252",
+          "archive": "/filings/c8942907e054cafa6eaff4005a94337fbd7dcf96ffb4b48a9696e45f7ba9c252.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Machinery — capex",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/capex.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:45.714Z",
+        "values": {
+          "industry": "Machinery",
+          "salesCapital": 1.95,
+          "sha256": "713eaa7f0f99997d9e3fa60249adc3547cc0934929f4a875ec94869c17806209",
+          "archive": "/filings/713eaa7f0f99997d9e3fa60249adc3547cc0934929f4a875ec94869c17806209.gz"
+        }
+      },
+      {
+        "name": "Damodaran — monthly implied ERP",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
+        "asOf": "2026-11-01",
+        "retrievedAt": "2026-11-02T21:59:41.679Z",
+        "values": {
+          "erp": 0.0441,
+          "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
+          "sourceTreasury": 0.0529,
+          "sha256": "9e39dfdebe1d02540b6fa7f6c5733c57b533eb4bf58ab3ffed9d014c6772a972",
+          "archive": "/filings/9e39dfdebe1d02540b6fa7f6c5733c57b533eb4bf58ab3ffed9d014c6772a972.gz"
+        }
+      },
+      {
+        "name": "Damodaran — synthetic credit spreads",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ratings.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:42.054Z",
+        "values": {
+          "table": "Large nonfinancial service firms",
+          "spreads": "[{\"lower\":-100000,\"rating\":\"D2/D\",\"spread\":0.19},{\"lower\":0.2,\"rating\":\"C2/C\",\"spread\":0.16},{\"lower\":0.65,\"rating\":\"Ca2/CC\",\"spread\":0.1261},{\"lower\":0.8,\"rating\":\"Caa/CCC\",\"spread\":0.0885},{\"lower\":1.25,\"rating\":\"B3/B-\",\"spread\":0.0509},{\"lower\":1.5,\"rating\":\"B2/B\",\"spread\":0.0321},{\"lower\":1.75,\"rating\":\"B1/B+\",\"spread\":0.0275},{\"lower\":2,\"rating\":\"Ba2/BB\",\"spread\":0.0184},{\"lower\":2.25,\"rating\":\"Ba1/BB+\",\"spread\":0.0138},{\"lower\":2.5,\"rating\":\"Baa2/BBB\",\"spread\":0.0111},{\"lower\":3,\"rating\":\"A3/A-\",\"spread\":0.0089},{\"lower\":4.25,\"rating\":\"A2/A\",\"spread\":0.0078000000000000005},{\"lower\":5.5,\"rating\":\"A1/A+\",\"spread\":0.006999999999999999},{\"lower\":6.5,\"rating\":\"Aa2/AA\",\"spread\":0.0055000000000000005},{\"lower\":8.5,\"rating\":\"Aaa/AAA\",\"spread\":0.004}]",
+          "sha256": "71d5dba40bd0659b7d6fe6f0e2d25036442d66b3c5e309480d0c9b48b2c3ba63",
+          "archive": "/filings/71d5dba40bd0659b7d6fe6f0e2d25036442d66b3c5e309480d0c9b48b2c3ba63.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Machinery — borrowing cost",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/wacc.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:46.274Z",
+        "values": {
+          "costDebt": 0.0529,
+          "sha256": "04a4dd2188cbc9081d232b14599c299487ca67d54fb8e7e397bc4b8a2246d8e8",
+          "archive": "/filings/04a4dd2188cbc9081d232b14599c299487ca67d54fb8e7e397bc4b8a2246d8e8.gz"
+        }
+      }
+    ],
+    "riskFree": 0.049100000000000005,
+    "erp": 0.0441,
+    "marginalTax": 0.25,
+    "creditSpreads": [
+      {
+        "lower": -100000,
+        "rating": "D2/D",
+        "spread": 0.19
+      },
+      {
+        "lower": 0.2,
+        "rating": "C2/C",
+        "spread": 0.16
+      },
+      {
+        "lower": 0.65,
+        "rating": "Ca2/CC",
+        "spread": 0.1261
+      },
+      {
+        "lower": 0.8,
+        "rating": "Caa/CCC",
+        "spread": 0.0885
+      },
+      {
+        "lower": 1.25,
+        "rating": "B3/B-",
+        "spread": 0.0509
+      },
+      {
+        "lower": 1.5,
+        "rating": "B2/B",
+        "spread": 0.0321
+      },
+      {
+        "lower": 1.75,
+        "rating": "B1/B+",
+        "spread": 0.0275
+      },
+      {
+        "lower": 2,
+        "rating": "Ba2/BB",
+        "spread": 0.0184
+      },
+      {
+        "lower": 2.25,
+        "rating": "Ba1/BB+",
+        "spread": 0.0138
+      },
+      {
+        "lower": 2.5,
+        "rating": "Baa2/BBB",
+        "spread": 0.0111
+      },
+      {
+        "lower": 3,
+        "rating": "A3/A-",
+        "spread": 0.0089
+      },
+      {
+        "lower": 4.25,
+        "rating": "A2/A",
+        "spread": 0.0078000000000000005
+      },
+      {
+        "lower": 5.5,
+        "rating": "A1/A+",
+        "spread": 0.006999999999999999
+      },
+      {
+        "lower": 6.5,
+        "rating": "Aa2/AA",
+        "spread": 0.0055000000000000005
+      },
+      {
+        "lower": 8.5,
+        "rating": "Aaa/AAA",
+        "spread": 0.004
+      }
+    ]
+  },
+  "Engineering/Construction": {
+    "industry": {
+      "name": "Engineering/Construction",
+      "unleveredBeta": 1.09,
+      "debtEquity": 0.1401,
+      "margin": 0.0649,
+      "roic": 0.1426,
+      "salesCapital": 4.36,
+      "costDebt": 0.0529
+    },
+    "references": [
+      {
+        "name": "US Treasury — 10-year par yield",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+        "asOf": "2026-11-02",
+        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "values": {
+          "treasury": 0.049100000000000005,
+          "convention": "Unadjusted US Treasury proxy",
+          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
+          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+        }
+      },
+      {
+        "name": "Damodaran — US marginal tax",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+        "asOf": "January 5, 2026",
+        "retrievedAt": "2026-11-02T21:59:41.401Z",
+        "values": {
+          "marginalTax": 0.25,
+          "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+          "archive": "/filings/ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Engineering/Construction — Betas",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:44.110Z",
+        "values": {
+          "industry": "Engineering/Construction",
+          "unleveredBeta": 1.09,
+          "debtEquity": 0.1401,
+          "sha256": "10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b",
+          "archive": "/filings/10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Engineering/Construction — margin",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/margin.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:44.729Z",
+        "values": {
+          "industry": "Engineering/Construction",
+          "margin": 0.0649,
+          "sha256": "56c79e830dff33433c1ee66cea14ab2156d465a8de349d734f40235899bf1090",
+          "archive": "/filings/56c79e830dff33433c1ee66cea14ab2156d465a8de349d734f40235899bf1090.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Engineering/Construction — roc",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:45.198Z",
+        "values": {
+          "industry": "Engineering/Construction",
+          "roic": 0.1426,
+          "sha256": "c8942907e054cafa6eaff4005a94337fbd7dcf96ffb4b48a9696e45f7ba9c252",
+          "archive": "/filings/c8942907e054cafa6eaff4005a94337fbd7dcf96ffb4b48a9696e45f7ba9c252.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Engineering/Construction — capex",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/capex.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:45.714Z",
+        "values": {
+          "industry": "Engineering/Construction",
+          "salesCapital": 4.36,
+          "sha256": "713eaa7f0f99997d9e3fa60249adc3547cc0934929f4a875ec94869c17806209",
+          "archive": "/filings/713eaa7f0f99997d9e3fa60249adc3547cc0934929f4a875ec94869c17806209.gz"
+        }
+      },
+      {
+        "name": "Damodaran — monthly implied ERP",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
+        "asOf": "2026-11-01",
+        "retrievedAt": "2026-11-02T21:59:41.679Z",
+        "values": {
+          "erp": 0.0441,
+          "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
+          "sourceTreasury": 0.0529,
+          "sha256": "9e39dfdebe1d02540b6fa7f6c5733c57b533eb4bf58ab3ffed9d014c6772a972",
+          "archive": "/filings/9e39dfdebe1d02540b6fa7f6c5733c57b533eb4bf58ab3ffed9d014c6772a972.gz"
+        }
+      },
+      {
+        "name": "Damodaran — synthetic credit spreads",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ratings.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:42.054Z",
+        "values": {
+          "table": "Large nonfinancial service firms",
+          "spreads": "[{\"lower\":-100000,\"rating\":\"D2/D\",\"spread\":0.19},{\"lower\":0.2,\"rating\":\"C2/C\",\"spread\":0.16},{\"lower\":0.65,\"rating\":\"Ca2/CC\",\"spread\":0.1261},{\"lower\":0.8,\"rating\":\"Caa/CCC\",\"spread\":0.0885},{\"lower\":1.25,\"rating\":\"B3/B-\",\"spread\":0.0509},{\"lower\":1.5,\"rating\":\"B2/B\",\"spread\":0.0321},{\"lower\":1.75,\"rating\":\"B1/B+\",\"spread\":0.0275},{\"lower\":2,\"rating\":\"Ba2/BB\",\"spread\":0.0184},{\"lower\":2.25,\"rating\":\"Ba1/BB+\",\"spread\":0.0138},{\"lower\":2.5,\"rating\":\"Baa2/BBB\",\"spread\":0.0111},{\"lower\":3,\"rating\":\"A3/A-\",\"spread\":0.0089},{\"lower\":4.25,\"rating\":\"A2/A\",\"spread\":0.0078000000000000005},{\"lower\":5.5,\"rating\":\"A1/A+\",\"spread\":0.006999999999999999},{\"lower\":6.5,\"rating\":\"Aa2/AA\",\"spread\":0.0055000000000000005},{\"lower\":8.5,\"rating\":\"Aaa/AAA\",\"spread\":0.004}]",
+          "sha256": "71d5dba40bd0659b7d6fe6f0e2d25036442d66b3c5e309480d0c9b48b2c3ba63",
+          "archive": "/filings/71d5dba40bd0659b7d6fe6f0e2d25036442d66b3c5e309480d0c9b48b2c3ba63.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Engineering/Construction — borrowing cost",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/wacc.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:46.274Z",
+        "values": {
+          "costDebt": 0.0529,
+          "sha256": "04a4dd2188cbc9081d232b14599c299487ca67d54fb8e7e397bc4b8a2246d8e8",
+          "archive": "/filings/04a4dd2188cbc9081d232b14599c299487ca67d54fb8e7e397bc4b8a2246d8e8.gz"
+        }
+      }
+    ],
+    "riskFree": 0.049100000000000005,
+    "erp": 0.0441,
+    "marginalTax": 0.25,
+    "creditSpreads": [
+      {
+        "lower": -100000,
+        "rating": "D2/D",
+        "spread": 0.19
+      },
+      {
+        "lower": 0.2,
+        "rating": "C2/C",
+        "spread": 0.16
+      },
+      {
+        "lower": 0.65,
+        "rating": "Ca2/CC",
+        "spread": 0.1261
+      },
+      {
+        "lower": 0.8,
+        "rating": "Caa/CCC",
+        "spread": 0.0885
+      },
+      {
+        "lower": 1.25,
+        "rating": "B3/B-",
+        "spread": 0.0509
+      },
+      {
+        "lower": 1.5,
+        "rating": "B2/B",
+        "spread": 0.0321
+      },
+      {
+        "lower": 1.75,
+        "rating": "B1/B+",
+        "spread": 0.0275
+      },
+      {
+        "lower": 2,
+        "rating": "Ba2/BB",
+        "spread": 0.0184
+      },
+      {
+        "lower": 2.25,
+        "rating": "Ba1/BB+",
+        "spread": 0.0138
+      },
+      {
+        "lower": 2.5,
+        "rating": "Baa2/BBB",
+        "spread": 0.0111
+      },
+      {
+        "lower": 3,
+        "rating": "A3/A-",
+        "spread": 0.0089
+      },
+      {
+        "lower": 4.25,
+        "rating": "A2/A",
+        "spread": 0.0078000000000000005
+      },
+      {
+        "lower": 5.5,
+        "rating": "A1/A+",
+        "spread": 0.006999999999999999
+      },
+      {
+        "lower": 6.5,
+        "rating": "Aa2/AA",
+        "spread": 0.0055000000000000005
+      },
+      {
+        "lower": 8.5,
+        "rating": "Aaa/AAA",
+        "spread": 0.004
+      }
+    ]
+  },
+  "Retail (General)": {
+    "industry": {
+      "name": "Retail (General)",
+      "unleveredBeta": 0.76,
+      "debtEquity": 0.0794,
+      "margin": 0.068,
+      "roic": 0.1518,
+      "salesCapital": 3.51,
+      "costDebt": 0.0507
+    },
+    "references": [
+      {
+        "name": "US Treasury — 10-year par yield",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
+        "asOf": "2026-11-02",
+        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "values": {
+          "treasury": 0.049100000000000005,
+          "convention": "Unadjusted US Treasury proxy",
+          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
+          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+        }
+      },
+      {
+        "name": "Damodaran — US marginal tax",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html",
+        "asOf": "January 5, 2026",
+        "retrievedAt": "2026-11-02T21:59:41.401Z",
+        "values": {
+          "marginalTax": 0.25,
+          "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+          "archive": "/filings/ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Retail (General) — Betas",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:44.110Z",
+        "values": {
+          "industry": "Retail (General)",
+          "unleveredBeta": 0.76,
+          "debtEquity": 0.0794,
+          "sha256": "10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b",
+          "archive": "/filings/10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Retail (General) — margin",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/margin.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:44.729Z",
+        "values": {
+          "industry": "Retail (General)",
+          "margin": 0.068,
+          "sha256": "56c79e830dff33433c1ee66cea14ab2156d465a8de349d734f40235899bf1090",
+          "archive": "/filings/56c79e830dff33433c1ee66cea14ab2156d465a8de349d734f40235899bf1090.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Retail (General) — roc",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:45.198Z",
+        "values": {
+          "industry": "Retail (General)",
+          "roic": 0.1518,
+          "sha256": "c8942907e054cafa6eaff4005a94337fbd7dcf96ffb4b48a9696e45f7ba9c252",
+          "archive": "/filings/c8942907e054cafa6eaff4005a94337fbd7dcf96ffb4b48a9696e45f7ba9c252.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Retail (General) — capex",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/capex.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:45.714Z",
+        "values": {
+          "industry": "Retail (General)",
+          "salesCapital": 3.51,
+          "sha256": "713eaa7f0f99997d9e3fa60249adc3547cc0934929f4a875ec94869c17806209",
+          "archive": "/filings/713eaa7f0f99997d9e3fa60249adc3547cc0934929f4a875ec94869c17806209.gz"
+        }
+      },
+      {
+        "name": "Damodaran — monthly implied ERP",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
+        "asOf": "2026-11-01",
+        "retrievedAt": "2026-11-02T21:59:41.679Z",
+        "values": {
+          "erp": 0.0441,
+          "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
+          "sourceTreasury": 0.0529,
+          "sha256": "9e39dfdebe1d02540b6fa7f6c5733c57b533eb4bf58ab3ffed9d014c6772a972",
+          "archive": "/filings/9e39dfdebe1d02540b6fa7f6c5733c57b533eb4bf58ab3ffed9d014c6772a972.gz"
+        }
+      },
+      {
+        "name": "Damodaran — synthetic credit spreads",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ratings.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:42.054Z",
+        "values": {
+          "table": "Large nonfinancial service firms",
+          "spreads": "[{\"lower\":-100000,\"rating\":\"D2/D\",\"spread\":0.19},{\"lower\":0.2,\"rating\":\"C2/C\",\"spread\":0.16},{\"lower\":0.65,\"rating\":\"Ca2/CC\",\"spread\":0.1261},{\"lower\":0.8,\"rating\":\"Caa/CCC\",\"spread\":0.0885},{\"lower\":1.25,\"rating\":\"B3/B-\",\"spread\":0.0509},{\"lower\":1.5,\"rating\":\"B2/B\",\"spread\":0.0321},{\"lower\":1.75,\"rating\":\"B1/B+\",\"spread\":0.0275},{\"lower\":2,\"rating\":\"Ba2/BB\",\"spread\":0.0184},{\"lower\":2.25,\"rating\":\"Ba1/BB+\",\"spread\":0.0138},{\"lower\":2.5,\"rating\":\"Baa2/BBB\",\"spread\":0.0111},{\"lower\":3,\"rating\":\"A3/A-\",\"spread\":0.0089},{\"lower\":4.25,\"rating\":\"A2/A\",\"spread\":0.0078000000000000005},{\"lower\":5.5,\"rating\":\"A1/A+\",\"spread\":0.006999999999999999},{\"lower\":6.5,\"rating\":\"Aa2/AA\",\"spread\":0.0055000000000000005},{\"lower\":8.5,\"rating\":\"Aaa/AAA\",\"spread\":0.004}]",
+          "sha256": "71d5dba40bd0659b7d6fe6f0e2d25036442d66b3c5e309480d0c9b48b2c3ba63",
+          "archive": "/filings/71d5dba40bd0659b7d6fe6f0e2d25036442d66b3c5e309480d0c9b48b2c3ba63.gz"
+        }
+      },
+      {
+        "name": "Damodaran — Retail (General) — borrowing cost",
+        "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/wacc.html",
+        "asOf": "January 2026",
+        "retrievedAt": "2026-11-02T21:59:46.274Z",
+        "values": {
+          "costDebt": 0.0507,
+          "sha256": "04a4dd2188cbc9081d232b14599c299487ca67d54fb8e7e397bc4b8a2246d8e8",
+          "archive": "/filings/04a4dd2188cbc9081d232b14599c299487ca67d54fb8e7e397bc4b8a2246d8e8.gz"
+        }
+      }
+    ],
+    "riskFree": 0.049100000000000005,
+    "erp": 0.0441,
+    "marginalTax": 0.25,
+    "creditSpreads": [
+      {
+        "lower": -100000,
+        "rating": "D2/D",
+        "spread": 0.19
+      },
+      {
+        "lower": 0.2,
+        "rating": "C2/C",
+        "spread": 0.16
+      },
+      {
+        "lower": 0.65,
+        "rating": "Ca2/CC",
+        "spread": 0.1261
+      },
+      {
+        "lower": 0.8,
+        "rating": "Caa/CCC",
+        "spread": 0.0885
+      },
+      {
+        "lower": 1.25,
+        "rating": "B3/B-",
+        "spread": 0.0509
+      },
+      {
+        "lower": 1.5,
+        "rating": "B2/B",
+        "spread": 0.0321
+      },
+      {
+        "lower": 1.75,
+        "rating": "B1/B+",
+        "spread": 0.0275
+      },
+      {
+        "lower": 2,
+        "rating": "Ba2/BB",
+        "spread": 0.0184
+      },
+      {
+        "lower": 2.25,
+        "rating": "Ba1/BB+",
+        "spread": 0.0138
+      },
+      {
+        "lower": 2.5,
+        "rating": "Baa2/BBB",
+        "spread": 0.0111
+      },
+      {
+        "lower": 3,
+        "rating": "A3/A-",
+        "spread": 0.0089
+      },
+      {
+        "lower": 4.25,
+        "rating": "A2/A",
+        "spread": 0.0078000000000000005
+      },
+      {
+        "lower": 5.5,
+        "rating": "A1/A+",
+        "spread": 0.006999999999999999
+      },
+      {
+        "lower": 6.5,
+        "rating": "Aa2/AA",
+        "spread": 0.0055000000000000005
+      },
+      {
+        "lower": 8.5,
+        "rating": "Aaa/AAA",
+        "spread": 0.004
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "source": "https://pages.stern.nyu.edu/~adamodar/pc/fcffsimpleginzu.xlsx",
+  "sha256": "d6ffb67d965dc22463e4d013636befab3da431e7fc608936a82612fa73198e72",
+  "retrievedAt": "2026-11-02T22:13:06.256268+00:00",
+  "sheet": "Valuation output",
+  "scope": "Terminal reinvestment, terminal value and enterprise-to-equity arithmetic only. Forecast timing, tax and changing discount rates differ from this application's model.",
+  "values": {
+    "nopat": {
+      "cell": "M7",
+      "value": "3863.9619302467559"
+    },
+    "growth": {
+      "cell": "M2",
+      "value": "4.58E-2"
+    },
+    "roic": {
+      "cell": "M40",
+      "value": "8.809999999999997E-2"
+    },
+    "wacc": {
+      "cell": "M12",
+      "value": "8.8099999999999998E-2"
+    },
+    "terminalFcff": {
+      "cell": "M9",
+      "value": "1855.2280323432205"
+    },
+    "terminalValue": {
+      "cell": "B18",
+      "value": "43858.818731518222"
+    },
+    "enterpriseValue": {
+      "cell": "B24",
+      "value": "37517.530765318021"
+    },
+    "cash": {
+      "cell": "B27",
+      "value": "19000"
+    },
+    "otherAssets": {
+      "cell": "B28",
+      "value": "21119"
+    },
+    "debt": {
+      "cell": "B25",
+      "value": "45063"
+    },
+    "minority": {
+      "cell": "B26",
+      "value": "1558"
+    },
+    "equityValue": {
+      "cell": "B29",
+      "value": "31015.530765318021"
+    },
+    "shares": {
+      "cell": "B32",
+      "value": "4315"
+    },
+    "perShare": {
+      "cell": "B33",
+      "value": "7.1878402700621136"
+    }
+  }
+}

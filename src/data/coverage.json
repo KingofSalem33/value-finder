@@ -1,0 +1,9 @@
+{
+  "AMD": { "cik": 2488, "industry": "Semiconductor" },
+  "AAPL": { "cik": 320193, "industry": "Computers/Peripherals" },
+  "MSFT": { "cik": 789019, "industry": "Software (System & Application)" },
+  "CAT": { "cik": 18230, "industry": "Machinery", "specialized": "Caterpillar has a material financing business. Industrial operations and financial services require separate cash flows and debt allocation." },
+  "TXN": { "cik": 97476, "industry": "Semiconductor" },
+  "AGX": { "cik": 100591, "industry": "Engineering/Construction" },
+  "AMZN": { "cik": 1018724, "industry": "Retail (General)" }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "value-finder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "verify:live": "tsx scripts/verify-live.ts",
+    "refresh:references": "tsx scripts/refresh-references.ts",
+    "collect": "python scripts/collect.py",
+    "build:records": "tsx scripts/build-records.ts",
+    "verify:records": "tsx scripts/verify-records.ts",
+    "test:collector": "python -m unittest discover -s tests -p test_*.py",
+    "prebuild": "npm test && npm run verify:records"
+  },
+  "dependencies": {
+    "next": "16.4.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "cheerio": "1.2.0",
+    "tailwindcss": "4.3.3",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

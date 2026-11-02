@@ -1,0 +1,65 @@
+{
+  "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026": {
+    "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
+    "retrievedAt": "2026-11-02T21:59:40.684Z",
+    "etag": null,
+    "lastModified": null,
+    "bytes": 325123
+  },
+  "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html": {
+    "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
+    "retrievedAt": "2026-11-02T21:59:41.401Z",
+    "etag": null,
+    "lastModified": null,
+    "bytes": 277049
+  },
+  "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm": {
+    "sha256": "9e39dfdebe1d02540b6fa7f6c5733c57b533eb4bf58ab3ffed9d014c6772a972",
+    "retrievedAt": "2026-11-02T21:59:41.679Z",
+    "etag": null,
+    "lastModified": null,
+    "bytes": 17007
+  },
+  "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ratings.html": {
+    "sha256": "71d5dba40bd0659b7d6fe6f0e2d25036442d66b3c5e309480d0c9b48b2c3ba63",
+    "retrievedAt": "2026-11-02T21:59:42.054Z",
+    "etag": null,
+    "lastModified": null,
+    "bytes": 49398
+  },
+  "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/Betas.html": {
+    "sha256": "10993bab71504e2449ccdd9e3d67fa4da983bed380b2f4486e5200a7b258616b",
+    "retrievedAt": "2026-11-02T21:59:44.110Z",
+    "etag": null,
+    "lastModified": null,
+    "bytes": 464334
+  },
+  "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/margin.html": {
+    "sha256": "56c79e830dff33433c1ee66cea14ab2156d465a8de349d734f40235899bf1090",
+    "retrievedAt": "2026-11-02T21:59:44.729Z",
+    "etag": null,
+    "lastModified": null,
+    "bytes": 206297
+  },
+  "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/roc.html": {
+    "sha256": "c8942907e054cafa6eaff4005a94337fbd7dcf96ffb4b48a9696e45f7ba9c252",
+    "retrievedAt": "2026-11-02T21:59:45.198Z",
+    "etag": null,
+    "lastModified": null,
+    "bytes": 294792
+  },
+  "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/capex.html": {
+    "sha256": "713eaa7f0f99997d9e3fa60249adc3547cc0934929f4a875ec94869c17806209",
+    "retrievedAt": "2026-11-02T21:59:45.714Z",
+    "etag": null,
+    "lastModified": null,
+    "bytes": 375398
+  },
+  "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/wacc.html": {
+    "sha256": "04a4dd2188cbc9081d232b14599c299487ca67d54fb8e7e397bc4b8a2246d8e8",
+    "retrievedAt": "2026-11-02T21:59:46.274Z",
+    "etag": null,
+    "lastModified": null,
+    "bytes": 405334
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "symbol": "AGX",
+    "cik": 100591,
+    "tag": "review:DebtFree",
+    "unit": "USD",
+    "val": 0,
+    "end": "2026-07-31",
+    "form": "8-K",
+    "filed": "2026-09-02",
+    "accn": "0001104659-26-104735",
+    "url": "https://www.sec.gov/Archives/edgar/data/100591/000110465926104735/agx-20260902xex99d1.htm",
+    "requiredText": "the Company had no debt",
+    "note": "The earnings release states that the company had no debt at July 31, 2026. This is a dated qualitative disclosure, not a missing XBRL amount changed to zero. Separate leases, bonding and other obligations still require review."
+  }
+]
