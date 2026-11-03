@@ -1,9 +1,9 @@
 import { test, mock } from 'node:test';
 import assert from 'node:assert/strict';
-import { createHash } from 'node:crypto';
+import { createHash, randomBytes } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import { gunzipSync } from 'node:zlib';
-import { createSecService, memoryCache, readSec, selectFilings, type Capture, type SourceCache } from '../src/lib/sec';
+import { createSecService, compressedCache, memoryCache, readSec, selectFilings, type Capture, type SourceCache } from '../src/lib/sec';
 import { parseInstance, usedTags, type Filing } from '../src/lib/xbrl';
 import { researchFromSec } from '../src/lib/research';
 import { marginOfSafety } from '../src/lib/valuation';
@@ -86,6 +86,25 @@ test('failed retrievals do not populate the source cache', async () => {
   const cache = memoryCache(); let calls = 0;
   await assert.rejects(cache('fail', 60, async () => { calls++; throw new Error('Source failure'); }));
   assert.equal(await cache('fail', 60, async () => { calls++; return 10; }), 10); assert.equal(calls, 2);
+});
+
+test('large financial inputs fit the persistent cache after compression without changing their values', async () => {
+  const input = { rows: Array.from({length:80000}, (_, i) => ({val:i,unit:'USD',end:'2025-12-31',retrievedAt:'2026-11-02T00:00:00Z'})) };
+  assert.ok(Buffer.byteLength(JSON.stringify(input)) > 5_000_000);
+  const saved = memoryCache(); let storedSize = 0; let reads = 0;
+  const store: SourceCache = (key, seconds, work) => saved(key, seconds, async () => { const value = await work(); storedSize = Buffer.byteLength(JSON.stringify(value)); return value; });
+  const cache = compressedCache(store);
+  assert.deepEqual(await cache('large', 60, async () => { reads++; return input; }), input);
+  assert.deepEqual(await cache('large', 60, async () => { reads++; return input; }), input);
+  assert.equal(reads, 1); assert.ok(storedSize < 1_500_000);
+});
+
+test('incompressible inputs bypass persistence without failing or caching a missing value', async () => {
+  const input = { data: randomBytes(2_000_000).toString('base64') }; let reads = 0;
+  const cache = compressedCache(memoryCache());
+  assert.deepEqual(await cache('huge', 60, async () => { reads++; return input; }), input);
+  assert.deepEqual(await cache('huge', 60, async () => { reads++; return input; }), input);
+  assert.equal(reads, 2);
 });
 
 test('queued SEC requests stop at their deadline and expired slots do not block later requests', async () => {

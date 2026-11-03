@@ -131,7 +131,7 @@ Initial calculations run on the server. Analyst changes use the same TypeScript 
 
 ## On-demand cache and audit
 
-The SEC directory is cached for 24 hours. Submissions are cached for five minutes. Compact financial-input bundles are cached for one hour and keyed by the latest relevant filing accessions. A new accession selects a new bundle. Extracted instances are cached by accession for 30 days. Next.js provides the persistent cache; a bounded process cache coalesces concurrent reads. Cache hits retain the actual source retrieval timestamps. Requests use a real SEC contact, pacing, a 55-second search deadline, a 30 MB source limit, and explicit source-error responses.
+The SEC directory is cached for 24 hours. Submissions are cached for five minutes. Compact financial-input bundles are cached for one hour and keyed by the latest relevant filing accessions. A new accession selects a new bundle. Extracted instances are cached by accession for 30 days. Next.js provides the persistent cache with bounded gzip entries; a bounded process cache coalesces concurrent reads. Cache hits retain the actual source retrieval timestamps. Requests use a real SEC contact, pacing, a 55-second search deadline, a 30 MB source limit, and explicit source-error responses.
 
 On-demand source bodies are hashed but are not durably archived. Exports retain selected financial evidence, units, periods, filing dates, URLs, retrieval timestamps, assumptions and the input digest. The separately collected regression archives retain original bodies. No cached company valuation is returned as a search result: the engine calculates from the retrieved input bundle.
 

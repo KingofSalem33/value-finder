@@ -32,7 +32,7 @@ A stock search resolves a SEC-listed company, retrieves or reuses source inputs,
 
 ## Cache boundaries
 
-The directory has a 24-hour TTL. Submissions have a five-minute TTL. Compact financial bundles have a one-hour TTL and include the selected accession fingerprint. A new filing chooses a new bundle. Parsed instances have a 30-day TTL keyed by accession. A bounded process cache coalesces reads; Next.js supplies persistent caching. Source timestamps remain the time of actual retrieval. Progress callbacks do not run inside persistent cache refresh work.
+The directory has a 24-hour TTL. Submissions have a five-minute TTL. Compact financial bundles have a one-hour TTL and include the selected accession fingerprint. A new filing chooses a new bundle. Parsed instances have a 30-day TTL keyed by accession. A bounded process cache coalesces reads; Next.js supplies persistent caching. Persistent entries use gzip encoding capped at 1.5 MB; larger encoded entries bypass storage without changing or dropping their financial values. Source timestamps remain the time of actual retrieval. Progress callbacks do not run inside persistent cache refresh work.
 
 Original on-demand HTTP bodies are hashed but are not durably archived. Saved/exported evidence makes the selected model inputs reproducible. Separate offline regression captures retain original source bodies under `public/filings`. No database or Python web service is used.
 

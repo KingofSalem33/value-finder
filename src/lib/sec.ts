@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { setTimeout as delay } from 'node:timers/promises';
+import { gzipSync, gunzipSync } from 'node:zlib';
 import { SourceError } from './sources';
 import { parseInstance, usedTags, type Filing } from './xbrl';
 import reviews from '../data/accounting-review.json';
@@ -65,6 +66,20 @@ export function memoryCache(): SourceCache {
       return value;
     }).finally(() => pending.delete(key));
     pending.set(key, task); return structuredClone(await task);
+  };
+}
+
+/** Store compressed JSON below the framework's 2 MB entry limit; oversized entries remain uncached. */
+export function compressedCache(store: SourceCache): SourceCache {
+  return async <T>(key: string, seconds: number, work: () => Promise<T>): Promise<T> => {
+    let fresh: { value: T } | null = null;
+    const packed = await store<string | null>(key, seconds, async () => {
+      const value = await work(); fresh = { value };
+      const encoded = gzipSync(Buffer.from(JSON.stringify(value))).toString('base64');
+      return Buffer.byteLength(encoded) <= 1_500_000 ? encoded : null;
+    });
+    if (packed === null) return fresh ? (fresh as { value: T }).value : work();
+    return JSON.parse(gunzipSync(Buffer.from(packed, 'base64')).toString('utf8')) as T;
   };
 }
 

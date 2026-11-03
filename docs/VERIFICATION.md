@@ -4,10 +4,12 @@ Model: `fcff-2.1.0`. Checked on November 2-3, 2026. This record separates softwa
 
 ## Automated checks
 
-- 87 TypeScript tests pass. They include the prior FCFF, WACC, TTM, bridge, currency/share, missing-value and independent Decimal checks.
+- 89 TypeScript tests pass. They include the prior FCFF, WACC, TTM, bridge, currency/share, missing-value and independent Decimal checks.
 - The runtime XBRL parser agrees with the independent EdgarTools extract for all used facts in AMD's latest annual and quarterly source instances. Tests also check negative amounts, reported zero, nil exclusion, dimensions, issuer identity, precision and unsafe entity declarations.
 - On-demand tests cover symbols outside the regression set, source errors, mismatched CIKs, cache isolation and coalescing, source timestamps, latest-period guards, amendments without extracted XBRL, background cache progress, streamed error handling, abortable SEC queue deadlines and margin-of-safety arithmetic.
 - TypeScript checks and the read-only unused-code check pass.
+- Final code review reports no actionable findings. Earlier findings about amendments, background progress, live verification, source-URL typing and queue deadlines were fixed and checked.
+- Persistent source entries use bounded gzip encoding. A real repeated JPM request preserved the original source timestamp and completed in 0.37 seconds after a 3.59-second first request. Tests cover financial inputs above 5 MB and bypass persistence when incompressible data exceeds the storage limit. This fixes the oversized-entry warning found in the final development log check.
 - The existing seven archived records remain an offline regression gate. They do not supply stock-search results.
 
 ## Source retrieval
