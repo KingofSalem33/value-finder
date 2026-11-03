@@ -2,7 +2,8 @@
 import { useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Assumptions, CompanyFacts, Research, Submissions } from '@/lib/types';
-import { MODEL_VERSION, reverseDcf, scenarios } from '@/lib/valuation';
+import { MODEL_VERSION, marginOfSafety, reverseDcf, scenarios } from '@/lib/valuation';
+import { readResearchResponse } from '@/lib/research-stream';
 import { TAGS } from '@/lib/normalize';
 import { validSnapshot, type SavedValuation as Saved } from '@/lib/snapshot';
 import { researchStatus } from '@/lib/status';
@@ -10,24 +11,24 @@ import AssumptionEditor from './assumption-editor';
 import { Audit, Disclosure, Forecast, History, Sensitivity, Sources, Wacc } from './research-details';
 import { money, pct } from './format';
 
-const STORAGE_KEY = 'value-finder-valuations-v2';
+const STORAGE_KEY = 'value-finder-valuations-v3';
 export default function ResearchApp() {
   const [symbol, setSymbol] = useState(''); const [research, setResearch] = useState<Research | null>(null);
   const [a, setA] = useState<Assumptions | null>(null); const [mode, setMode] = useState<'auto' | 'analyst'>('auto');
   const [price, setPrice] = useState(''); const [priceDate, setPriceDate] = useState('');
   const [note, setNote] = useState(''); const [loading, setLoading] = useState(false); const [error, setError] = useState('');
+  const [progress, setProgress] = useState('');
   const [saved, setSaved] = useState<Saved[]>([]); const [saveMessage, setSaveMessage] = useState('');
   const [importOpen, setImportOpen] = useState(false); const [files, setFiles] = useState<File[]>([]);
   useEffect(() => { try { const data = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? '[]'); if (Array.isArray(data)) setSaved(data.filter(validSnapshot).slice(0, 10)); } catch { /* An unavailable browser store does not stop research. */ } }, []);
   function accept(r: Research) { setResearch(r); setA(r.assumptions); setMode('auto'); setNote(''); setPrice(''); setPriceDate(''); setSaveMessage(''); }
   async function load(ticker = symbol, imported?: { facts: CompanyFacts; submissions: Submissions }) {
     if (loading) return;
-    const clean = ticker.trim().toUpperCase(); setSymbol(clean); setLoading(true); setError(''); setResearch(null); setA(null); setSaveMessage('');
+    const clean = ticker.trim().toUpperCase(); setSymbol(clean); setLoading(true); setProgress('Finding company'); setError(''); setResearch(null); setA(null); setSaveMessage('');
     try {
-      const response = await fetch(imported ? '/api/research' : `/api/research?symbol=${encodeURIComponent(clean)}`, imported ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ symbol: clean, ...imported }) } : undefined);
-      const body = await response.json();
-      if (!response.ok) throw new Error(body.error ?? 'The research service is unavailable.');
-      accept(body); setImportOpen(false);
+      const response = await fetch(imported ? '/api/research' : `/api/research?symbol=${encodeURIComponent(clean)}`, imported ? { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ symbol: clean, ...imported }) } : { headers: { Accept: 'application/x-ndjson' } });
+      const body = await readResearchResponse(response, setProgress);
+      accept(body); setSymbol(body.symbol); setImportOpen(false);
     } catch (e) { setError((e as Error).message); } finally { setLoading(false); }
   }
   async function importSec() {
@@ -53,6 +54,7 @@ export default function ResearchApp() {
   const findings = [...(research?.findings ?? []), ...(base?.findings ?? []), ...(modeled?.base.error ? [{ code: 'INVALID_ASSUMPTIONS', severity: 'error' as const, message: modeled.base.error }] : [])];
   const status = research ? researchStatus(research, base, modeled?.base.error) : 'DATA UNAVAILABLE';
   const publishValue = base && !findings.some(f => f.severity === 'error');
+  const safety = base && validPrice ? marginOfSafety(base.perShare, Number(price)) : null;
   function snapshot(): Saved { return { id: crypto.randomUUID(), research: research!, assumptions: a, mode, note, price, priceDate, savedAt: new Date().toISOString() }; }
   function save() {
     if (!research) return;
@@ -81,9 +83,8 @@ export default function ResearchApp() {
           <div className="search-input"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><label className="sr-only" htmlFor="symbol">Stock symbol</label><input id="symbol" autoComplete="off" autoCapitalize="characters" spellCheck={false} maxLength={10} value={symbol} onChange={e => setSymbol(e.target.value.toUpperCase())} placeholder="Enter stock symbol" required pattern="[A-Za-z][A-Za-z0-9.\-]{0,9}" /></div>
           <button className="primary" type="submit" disabled={loading}>{loading ? 'Researching…' : 'Research'}<span aria-hidden="true">↗</span></button>
         </form>
-        {!research && !loading && <div className="symbols">{['AMD', 'AAPL', 'MSFT', 'CAT', 'TXN', 'AGX', 'AMZN'].map(ticker => <button key={ticker} onClick={() => void load(ticker)}>{ticker}</button>)}</div>}
       </section>
-      {loading && <div className="loading" role="status"><span className="loading-line"/>Loading research…</div>}
+      {loading && <div className="loading" role="status"><span className="loading-line"/>{progress}…</div>}
       {error && <div className="error-box" role="alert"><h2>Research unavailable</h2><p>{error}</p><button onClick={() => setImportOpen(true)}>Import SEC files</button></div>}
       {research && <section className="research" aria-label="Valuation results">
         <div className="company-heading"><div><p className="ticker">{research.symbol} <span>· USD · {research.company.exchanges?.join(', ')}</span></p><h2>{research.company.name}</h2></div><span className={`status ${status === 'INVALID' ? 'invalid' : ''}`}>{status}</span></div>
@@ -91,7 +92,7 @@ export default function ResearchApp() {
         <div className="valuation-summary">
           <div><h3>Market price</h3><strong>{validPrice ? money(Number(price)) : '—'}</strong><span>{validPrice ? `${priceDate} · Manual input` : 'Price not supplied'}</span></div>
           <div><h3>Base intrinsic value</h3><strong className="mint">{publishValue ? money(base.perShare) : '—'}</strong><span>USD per listed share</span></div>
-          <div><h3>Upside / downside</h3><strong className={publishValue && validPrice && base.perShare < Number(price) ? 'negative' : 'mint'}>{publishValue && validPrice ? pct(base.perShare / Number(price) - 1) : '—'}</strong><span>{base ? `WACC ${pct(base.wacc)}` : 'Valuation withheld'}</span></div>
+          <div><h3>Margin of safety</h3><strong className={safety !== null && safety < 0 ? 'negative' : 'mint'}>{publishValue ? pct(safety) : '—'}</strong><span>{base ? `WACC ${pct(base.wacc)}` : 'Valuation withheld'}</span></div>
         </div>
         {publishValue && modeled && <>
           <div className="scenario-section"><div className="scenario-range">{(['bear', 'base', 'bull'] as const).map(key => <div key={key} className={key}><span>{key[0].toUpperCase() + key.slice(1)}</span><i aria-hidden="true"/><strong>{modeled[key].result && modeled[key].result!.equityValue > 0 ? money(modeled[key].result!.perShare) : '—'}</strong></div>)}</div><div className="market-growth"><span>Market-implied growth</span><strong>{pct(reverse?.growth.value)}</strong><span>Modeled years 1–3</span><strong>{a ? pct(((1 + a.growth1) * (1 + a.growth2) * (1 + a.growth3)) ** (1 / 3) - 1) : '—'}</strong></div></div>

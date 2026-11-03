@@ -1,6 +1,9 @@
 import type { Assumptions, Bridge, DcfResult, Finding, ModelInput } from './types';
 
-export const MODEL_VERSION = 'fcff-2.0.0';
+export const MODEL_VERSION = 'fcff-2.1.0';
+export function marginOfSafety(intrinsicValue: number, price: number): number | null {
+  return Number.isFinite(intrinsicValue) && intrinsicValue > 0 && Number.isFinite(price) && price > 0 ? 1 - price / intrinsicValue : null;
+}
 export function discountRate(a: Assumptions) {
   if (![a.riskFree, a.erp, a.unleveredBeta, a.debtWeight, a.debtSpread, a.taxRate].every(Number.isFinite) || a.debtWeight < 0 || a.debtWeight >= .95 || a.taxRate < 0 || a.taxRate > .6 || a.erp < 0 || a.unleveredBeta <= 0 || a.debtSpread < 0) throw new Error('Invalid WACC inputs.');
   const equityWeight = 1 - a.debtWeight;

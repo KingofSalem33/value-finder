@@ -1,23 +1,21 @@
 import { writeFile, mkdir } from 'node:fs/promises';
 import { calculate, MODEL_VERSION, scenarios, reverseDcf } from '../src/lib/valuation';
-import acceptedRecords from '../src/data/research-records.json';
 import type { Research } from '../src/lib/types';
 const base = process.env.VERIFY_URL ?? 'https://value-finder-research.vercel.app';
 const results = [];
 let failures = 0;
 await mkdir('output/verification', { recursive: true });
-for (const symbol of ['AMD', 'AAPL', 'MSFT', 'CAT', 'TXN', 'AGX', 'AMZN']) {
+for (const symbol of ['AMD', 'AAPL', 'MSFT', 'CAT', 'TXN', 'AGX', 'AMZN', 'NVDA', 'COST', 'JNJ', 'JPM']) {
   try {
     const response = await fetch(`${base}/api/research?symbol=${symbol}`, { signal: AbortSignal.timeout(60000) });
     const raw = await response.json();
     if (!response.ok) throw new Error(`${response.status}: ${raw.error}`);
     const r = raw as Research;
     await writeFile(`output/verification/${symbol}.json`, JSON.stringify(r, null, 2));
-    const accepted = (acceptedRecords as unknown as Record<string, Research>)[symbol];
-    const checks: Record<string, boolean> = { matchingSymbol: r.symbol === symbol, modelVersion: r.version === MODEL_VERSION, acceptedInputDigest: !!accepted && r.inputDigest === accepted.inputDigest, acceptedCollectionTime: !!accepted && r.retrievedAt === accepted.retrievedAt, hasProvenance: !!r.current?.values.revenue?.url, missingFactsFlagged: !r.findings.some(f => f.code.startsWith('MISSING_')) || r.input === null };
+    const checks: Record<string, boolean> = { matchingSymbol: r.symbol === symbol, modelVersion: r.version === MODEL_VERSION, onDemand: r.origin === 'SEC on-demand', inputDigest: /^[a-f0-9]{64}$/.test(r.inputDigest), sourceChecks: r.references.some(ref => ref.name === 'SEC — Company Facts' && /^[a-f0-9]{64}$/.test(String(ref.values.sha256))), hasProvenance: r.specialized || !!r.current?.values.revenue?.url, missingFactsFlagged: !r.findings.some(f => f.code.startsWith('MISSING_')) || r.input === null };
     const errors = r.findings.filter(f => f.severity === 'error');
     const model = r.input && r.assumptions ? calculate(r.input, r.assumptions) : null;
-    checks.expectedCoverage = symbol === 'CAT' ? r.specialized && !model : !!model;
+    checks.expectedCoverage = ['CAT', 'JPM'].includes(symbol) ? r.specialized && !model : symbol === 'JNJ' ? !model && errors.some(f => f.code.startsWith('MISSING_')) : !!model;
     if (model && r.input && r.assumptions) {
       checks.cashFlowIdentity = model.years.every(y => Math.abs(y.nopat - y.reinvestment - y.fcff) < Math.max(1, Math.abs(y.fcff) * 1e-9) && (y.capex === null || y.da === null || y.workingCapital === null || Math.abs(y.capex - y.da + y.workingCapital - y.reinvestment) < Math.max(1, Math.abs(y.reinvestment) * 1e-9)));
       checks.terminalIdentity = Math.abs(model.terminalReinvestment / model.terminalNopat - r.assumptions.terminalGrowth / r.assumptions.terminalRoic) < 1e-9;
@@ -35,6 +33,6 @@ for (const symbol of ['AMD', 'AAPL', 'MSFT', 'CAT', 'TXN', 'AGX', 'AMZN']) {
     results.push(entry); console.log(JSON.stringify(entry));
   } catch (e) { failures++; const entry = { symbol, passed: false, error: (e as Error).message }; results.push(entry); console.log(JSON.stringify(entry)); }
 }
-const report = { url: base, checkedAt: new Date().toISOString(), scope: 'Deployed accepted-record parity and arithmetic invariants, not independent accounting or fair-value verification.', results, failures };
+const report = { url: base, checkedAt: new Date().toISOString(), scope: 'On-demand source retrieval, expected model/refusal behavior, server/client calculation parity and arithmetic invariants. Accounting completeness and forecast accuracy are not established.', results, failures };
 await writeFile('output/verification/live-report.json', JSON.stringify(report, null, 2));
 process.exitCode = failures ? 1 : 0;

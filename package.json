@@ -10,6 +10,7 @@
     "typecheck": "tsc --noEmit",
     "test": "tsx --test tests/*.test.ts",
     "verify:live": "tsx scripts/verify-live.ts",
+    "check:on-demand": "tsx scripts/check-on-demand.ts",
     "refresh:references": "tsx scripts/refresh-references.ts",
     "collect": "python scripts/collect.py",
     "build:records": "tsx scripts/build-records.ts",
@@ -18,6 +19,7 @@
     "prebuild": "npm test && npm run verify:records"
   },
   "dependencies": {
+    "fast-xml-parser": "5.11.2",
     "next": "16.4.4",
     "react": "19.3.1",
     "react-dom": "19.3.1"

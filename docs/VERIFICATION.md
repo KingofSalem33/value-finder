@@ -1,69 +1,41 @@
-# Refactor verification
+# On-demand verification
 
-Checked on 2026-11-02. Model: `fcff-2.0.0`.
+Model: `fcff-2.1.0`. Checked on November 2-3, 2026. This record separates software proof from accounting completeness and forecast accuracy.
 
-The prior live release record is retained in [VERIFICATION-v1.md](VERIFICATION-v1.md). Its production and six-company checks do not establish proof for this refactor.
+## Automated checks
 
-## Proven behavior
+- 87 TypeScript tests pass. They include the prior FCFF, WACC, TTM, bridge, currency/share, missing-value and independent Decimal checks.
+- The runtime XBRL parser agrees with the independent EdgarTools extract for all used facts in AMD's latest annual and quarterly source instances. Tests also check negative amounts, reported zero, nil exclusion, dimensions, issuer identity, precision and unsafe entity declarations.
+- On-demand tests cover symbols outside the regression set, source errors, mismatched CIKs, cache isolation and coalescing, source timestamps, latest-period guards, amendments without extracted XBRL, background cache progress, streamed error handling, abortable SEC queue deadlines and margin-of-safety arithmetic.
+- TypeScript checks and the read-only unused-code check pass.
+- The existing seven archived records remain an offline regression gate. They do not supply stock-search results.
 
-- 75 TypeScript tests pass. They cover the prior valuation checks plus actual AMD filing extracts, D&A component handling, matching-period growth, debt and lease scope, blank allocations, reference parsing, record acceptance, audit states, and saved provenance.
-- Five Python parser tests pass in the isolated Python 3.13 environment. They check units, dates, context, precision, segment exclusion, reported zeros, loss signs, issuer matching, and the contact-identity guard.
-- TypeScript checks pass. Collector dependencies pass `pip check`.
-- `npm run build` passes, including all tests, the accepted-record gate, and the Next.js production build.
-- All seven accepted records pass source-hash, issuer, model-version, and calculation checks. Six produce a valuation. CAT retains its specialized-model refusal.
-- Terminal reinvestment, terminal value, the equity bridge, and share value agree with cached cells in Damodaran's published `fcffsimpleginzu.xlsx`. The source hash, cells, and values are retained in `tests/damodaran-benchmark.json`.
-- The independent Decimal DCF test remains valid. It imports no application calculation code.
+## Source retrieval
 
-## Source evidence
+Direct on-demand retrieval and calculation passed for AMD, AAPL, MSFT, TXN, AGX, AMZN, NVDA and COST. CAT retained its specialized-model refusal. JNJ retrieved financials but did not produce a value because complete supported EBIT and debt inputs were missing. This is an accounting-review outcome, not evidence that the business has no value.
 
-EdgarTools 5.62.1 parsed AMD's original extracted XBRL instances for the 2025 annual report and the quarter ended 2026-06-27. The issuer's investor-relations site supplied the original filing files. The test extract retains source URLs and body hashes.
+The initial eight operating-company calculations agreed with their existing engine outputs under the same current inputs where comparable. No model was tuned to a vendor price target. Inputs and reports are retained in ignored `output/on-demand`.
 
-The extracted TTM revenue is $41.305 billion. TTM D&A is $3.073 billion: $3.050 billion annual D&A, plus $427 million other D&A and $1.095 billion intangible amortization in current YTD, less $364 million and $1.135 billion in prior comparable YTD. This is an extraction and arithmetic check. It does not establish an appropriate normalized profit margin or investment forecast.
+Company Facts supplies standard history. The runtime parser reads the latest annual and subsequent quarterly extracted XBRL, including current-period amendments. Amendments without extracted XBRL retain an explicit review finding. Custom concepts do not receive an automatic economic interpretation.
 
-Treasury and Damodaran reference retrieval succeeded. The Treasury observation is dated 2026-11-02. Monthly implied ERP is dated 2026-11-01. Industry tables are dated January 2026. Their original bodies are archived with source hashes. The monthly ERP source reports a different Treasury basis from the current observation. Both values are retained, and a material difference produces an audit finding.
+## Browser checks
 
-Argan's dated earnings release explicitly reports no debt for 2026-07-31. A period-specific rule records that disclosure. It does not infer zero borrowings for a future period or zero contingent obligations.
+The local browser passed an NVDA lookup outside the archived set, visible real progress, price independence, a 20.0% estimated margin of safety at a price equal to 80% of modeled value, a negative margin at a price above value, analyst growth edits, invalid WACC withholding and recovery, and automatic reset. The page had no horizontal overflow at 390 by 844 pixels. No browser console errors were recorded in the measured flow. All eleven local API cases passed the on-demand verifier, including eight valuations, two specialized-model refusals and JNJ accounting review.
 
-## Failure chain
+The browser extension's date-field fill needed a native keyboard change to commit its input. The committed date updated the price and margin normally. No source workaround was added for this automation behavior. Browser checks do not establish physical-phone behavior.
 
-The prior AMD path was: ticker search → research API → standard-tag normalization → initial forecast rules → FCFF engine → displayed estimate.
+## Deployment checks
 
-Two input and policy faults are proven. The normalizer missed separately reported D&A components. The forecast compared TTM revenue with annual revenue and treated the result as the recent growth trend. The prior growth cap and margin policy also affected the output. Industry capital productivity remains an assumption that needs company research.
+Run `npm run verify:live` for the current production site, or set `VERIFY_URL` for a test deployment. It checks the model version, on-demand origin, source capture hashes, source provenance, expected valuation/refusal outcomes, FCFF and terminal identities, independent scenarios, and server/client calculation parity. Unlike the prior verifier, it does not require live source timestamps or digests to equal an archived record.
 
-The entered market price is not an input to the independent FCFF value. Tests confirm price independence. Changing the quote feed cannot repair these accounting and forecast-policy faults. The refactor has not been tuned to match a published target.
+The SEC contact is stored as a server-only secret in Vercel Production and Preview. Environment access through the connector returned 403; the authenticated project dashboard saved and confirmed the setting. The actual contact is excluded from Git and the public source ZIP.
 
-## Browser evidence
+Final live deployment results are written to ignored `output/verification/live-report.json`. A local browser result or direct-source check is not a live deployment result.
 
-Playwright checked the local app through an import of AMD's actual filing extract and matching SEC company metadata. This extract has three comparable annual revenue periods. It is not the required five-annual-filing collection and was not accepted into the production registry.
+## Limits
 
-Passed checks:
+Search has no seven-company allowlist. A value still requires sufficient comparable history, supported accounting inputs, USD statements, a supported listed-share basis, and a documented industry reference. Banks, insurers, REITs, unresolved share classes and foreign issuers require additional methods or review.
 
-- Import and display of the actual filing extract.
-- Intrinsic-value independence from entered prices of $100 and $250.
-- Immediate recalculation after an analyst growth edit.
-- Invalid WACC rejection and recovery to calculated WACC.
-- Blank CapEx when working-capital allocation is unavailable.
-- Visible nested D&A source components.
-- Local saving, export, and validation of the export.
-- No page overflow at 390 × 844 pixels.
-- No page exceptions during the measured flow.
+No automatic output receives VERIFIED INPUTS. Company guidance is not automatically aggregated. Industry proxies, omitted claims, capital-plan duration, segment forecasts, complete CFO-to-FCFF reconciliation, and forecast accuracy remain review items. Treasury, ERP and industry inputs use visible dated captures and stale-reference findings; their refresh still requires a separate release. Market prices are manual. Physical-phone behavior and future scheduled execution timing remain unproven.
 
-Browser emulation does not establish physical-phone behavior. Development-server restart messages were outside the measured flow. Artifacts remain in ignored `output/refactor-qa`.
-
-## Release gate and remaining proof
-
-The full SEC collection passed for AMD, AAPL, MSFT, CAT, TXN, AGX, and AMZN. Each record includes ten annual periods from Company Facts and facts parsed from five annual filings plus the latest subsequent quarterly filing. Original source bodies are archived. The accepted run is recorded in `src/data/collection-report.json`.
-
-GitHub-hosted [run 41546039256](https://github.com/KingofSalem33/value-finder/actions/runs/41546039256) passed collection, parser tests, calculation tests, record acceptance, source packaging, and the production build. It committed the accepted records. This proves one manual hosted run; it does not prove future schedule timing or automatic deployment.
-
-The production deployment of source commit `cb84b26` passed all seven live API checks. Model version, input digests, collection timestamps, scenario calculations, and price independence matched the accepted records. The public source ZIP and an archived AMD collected-source record matched their local hashes. Unsupported symbols returned 404; malformed symbols returned 400, both with an error message.
-
-The production browser passed AMD search, manual-price independence, analyst growth edits, automatic reset, invalid WACC withholding and recovery, and CAT's specialized-model refusal. At 390 by 844 pixels, the page had no horizontal overflow. No page exceptions occurred during the measured AMD checks. Physical-phone behavior remains unproven. Each later deployment must repeat the live parity check.
-
-Still required:
-
-1. Connect the existing Vercel project for automatic Git deployment before relying on a scheduled data commit to update the site. Current releases use explicit deployments of accepted commits.
-2. Verify each deployment with `npm run verify:live`. This checks live model version, record digests, collection times, calculations, and expected coverage against the accepted local records. It writes its report to ignored `output/verification/live-report.json`.
-3. Verify a scheduled run and physical-phone behavior separately.
-
-No Git-triggered deployment is claimed. No automatic output receives VERIFIED INPUTS. Full CFO-to-FCFF reconciliation, investment duration, segment forecasts, normalization schedules, current company credit yields, and dated professional fair-value comparisons remain analyst review items.
+Prior release evidence is retained in [VERIFICATION-v1.md](VERIFICATION-v1.md) and [VERIFICATION-v2.md](VERIFICATION-v2.md).

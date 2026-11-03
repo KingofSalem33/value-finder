@@ -4,21 +4,23 @@ SEC-based intrinsic-value research with a ten-year FCFF model, independent opera
 
 Public site: https://value-finder-research.vercel.app
 
-Model `fcff-2.0.0` uses accepted SEC records collected on November 2, 2026. All seven record checks and the production build pass. Estimates remain provisional until the stated accounting and forecast reviews are complete.
+Model `fcff-2.1.0` retrieves SEC inputs on demand. Search is not limited to the saved regression companies. Estimates remain provisional until the stated accounting and forecast reviews are complete.
 
 ## Architecture
 
 One repository contains:
 
-- A scheduled Python collector. EdgarTools parses local SEC XBRL instances.
+- A server SEC adapter and a bounded TypeScript extracted-XBRL parser.
+- A separate Python/EdgarTools collector for archived regression evidence and independent parser checks.
 - One TypeScript accounting module for fiscal periods, fact selection, D&A components, debt scope, and TTM.
 - One TypeScript forecast and valuation engine, shared by the server and analyst editor.
-- Accepted JSON research records and compressed original source bodies.
+- Compact source-input caches, source hashes, and exported valuation snapshots.
+- Archived research records and original source bodies for offline regression checks.
 - The existing Next.js, TypeScript, and Tailwind interface on Vercel.
 
-Search reads deployed records. It does not call financial providers. No database, separate Python web service, quote provider, or AI forecast service is used. See [ownership and data flow](docs/ARCHITECTURE.md).
+Search resolves the symbol through the SEC directory, retrieves submissions and financial facts, reads the latest annual and subsequent quarterly extracted XBRL, then runs the accounting and valuation engines. A streamed response reports actual progress. No database, separate Python web service, quote provider, or AI forecast service is used. See [ownership and data flow](docs/ARCHITECTURE.md).
 
-Initial coverage is AMD, AAPL, MSFT, CAT, TXN, AGX, and AMZN. CAT receives a specialized-model refusal because its financing business requires separate treatment. Other symbols receive an explicit coverage message. Add companies only after their accounting and industry mappings pass filing checks.
+Any symbol can start a lookup. Calculation requires a supported US exchange listing, USD statements, sufficient comparable history, complete critical inputs, and a documented industry mapping. Industry mappings from SEC SIC codes are disclosed proxies. Banks, insurers, REITs, foreign issuers, unverified share classes and unresolved accounting receive an explicit refusal or review state. CAT requires a specialized model for its financing segment. The original seven symbols remain regression cases; NVDA and COST test searches outside that set.
 
 ## Local setup
 
@@ -37,13 +39,15 @@ npm run typecheck
 npm run dev
 ```
 
+Set a real application contact in ignored `.env.local` before searching: `SEC_USER_AGENT="ValueFinder research your-contact-address"`. Next.js loads this file. The address must be a valid email; the example address in `.env.example` is rejected. Set the same server-only variable in Vercel Production and Preview settings. Never use a `NEXT_PUBLIC_` prefix.
+
 On Linux/macOS, activate with `source .venv/bin/activate`.
 
-Existing accepted records can be served without Python. Python is required for collection, parser tests, and source packaging. A fresh checkout with no accepted records must complete collection before a production build.
+The on-demand website runs without Python. Python is required for offline collection, parser tests, and source packaging. Archived regression records ship with this repository and remain a release gate. They are not the source of search results.
 
 ## Collect and accept data
 
-Set `SEC_USER_AGENT` in the job or your local process to the application name and a real contact email. Do not commit its actual value. No SEC API key is required. `.env.example` contains a rejected example identity, not working credentials. The command-line collector does not load `.env.local` automatically.
+For offline collection and `npm run check:on-demand`, set `SEC_USER_AGENT` in the job or your local process to the application name and a real contact email. Do not commit its actual value. No SEC API key is required. `.env.example` contains a rejected example identity, not working credentials. The command-line collector does not load `.env.local` automatically.
 
 ```sh
 python scripts/collect.py
@@ -68,7 +72,7 @@ Collection candidates stay in ignored `output/collection`. `build:records` verif
 
 The workflow is limited to public repositories so standard hosted runners remain free. It requires a repository secret named `SEC_USER_AGENT`. Local collection and a manual GitHub-hosted run passed on November 2, 2026. The hosted run collected all seven companies, passed acceptance and production-build checks, and committed its records. Scheduled execution timing remains unproven.
 
-Deploy this repository's tested commit to the existing Vercel project `value-finder-research`. Confirm the accepted record hashes and model version with `npm run verify:live`. The website requires no financial-provider environment variables. The existing project is not connected for automatic Git deployments: a scheduled data commit alone does not update the public site. Each release currently requires an explicit deployment of the accepted commit.
+Deploy this repository's tested commit to the existing Vercel project `value-finder-research`. Confirm the accepted record hashes and model version with `npm run verify:live`. The website requires no financial-provider environment variables. The existing project is not connected for automatic Git deployments. Each release requires an explicit deployment of the tested commit. Company searches retrieve data without a deployment. Dated Treasury, ERP and industry reference captures still require a separate refresh and release; their dates and stale-reference findings remain visible.
 
 At this coverage size, deployed files are sufficient. A larger universe or materially larger archive is a reason to reassess storage. No paid service is required by this design.
 
@@ -121,6 +125,16 @@ See [verification evidence and remaining limits](docs/VERIFICATION.md). Passing 
 
 ## Save and reproduce
 
-Initial calculations run on the server. Analyst changes use the same TypeScript engine in the browser. Saved and exported results retain inputs, assumptions, source metadata, model version, and price date. Saved records from the previous model remain in the old browser storage key; this refactor uses a new key. Incompatible model exports are rejected rather than recalculated silently.
+Initial calculations run on the server. Analyst changes use the same TypeScript engine in the browser. Saved and exported results retain inputs, assumptions, source metadata, model version, and price date. Saved records from previous models remain in their old browser storage keys; this version uses the v3 key. Incompatible model exports are rejected rather than recalculated silently.
 
 `python scripts/package-source.py` creates `public/source.zip`. It includes source, tests, workflow, captured data, and public source archives. It excludes credentials, dependencies, local output, and browser state.
+
+## On-demand cache and audit
+
+The SEC directory is cached for 24 hours. Submissions are cached for five minutes. Compact financial-input bundles are cached for one hour and keyed by the latest relevant filing accessions. A new accession selects a new bundle. Extracted instances are cached by accession for 30 days. Next.js provides the persistent cache; a bounded process cache coalesces concurrent reads. Cache hits retain the actual source retrieval timestamps. Requests use a real SEC contact, pacing, a 55-second search deadline, a 30 MB source limit, and explicit source-error responses.
+
+On-demand source bodies are hashed but are not durably archived. Exports retain selected financial evidence, units, periods, filing dates, URLs, retrieval timestamps, assumptions and the input digest. The separately collected regression archives retain original bodies. No cached company valuation is returned as a search result: the engine calculates from the retrieved input bundle.
+
+The headline margin of safety is `(intrinsic value - entered price) / intrinsic value`. A negative result means the entered price exceeds the estimate. No purchase-price limit is shown.
+
+Run `npm run check:on-demand -- NVDA COST` with the SEC contact set to test retrieval outside the regression set. Run `npm run verify:live` after deployment to check on-demand retrieval, calculations, and expected refusals. Neither command proves forecast accuracy.

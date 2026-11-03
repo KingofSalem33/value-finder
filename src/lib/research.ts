@@ -1,10 +1,10 @@
 import { createHash } from 'node:crypto';
 import { normalize, daysBetween, includesFinanceLeases, includesShortDebt } from './normalize';
-import { industryName, SourceError } from './sources';
+import { industryName } from './sources';
 import { discountRate, MODEL_VERSION, scenarios } from './valuation';
 import coverage from '../data/coverage.json';
 import referenceSnapshots from '../data/reference-snapshot.json';
-import records from '../data/research-records.json';
+import type { SecCompany, Progress } from './sec';
 import type { Assumptions, AssumptionNote, CompanyFacts, Period, ReferenceSet, Research, Submissions } from './types';
 
 const clamp = (v: number, min: number, max: number) => Math.min(max, Math.max(min, v));
@@ -15,20 +15,29 @@ export interface CollectedCompany {
   documents: { url: string; sha256: string; retrievedAt: string; bytes: number; periodEnd?: string; filed?: string; form?: string }[];
 }
 
-// Search reads accepted records. Financial providers are not called here.
-export async function buildResearch(symbol: string, imported?: { facts: CompanyFacts; submissions: Submissions }): Promise<Research> {
+export async function buildResearch(symbol: string, imported?: { facts: CompanyFacts; submissions: Submissions }, progress?: Progress): Promise<Research> {
   if (imported) {
-    const name = industryName(symbol, Number(imported.submissions.sic));
+    const name = industryName(symbol, Number(imported.submissions.sic), Number(imported.submissions.cik));
     const refs = name ? (referenceSnapshots as unknown as Record<string, ReferenceSet>)[name] : null;
     return createResearch(symbol, { ...imported, retrievedAt: new Date().toISOString() }, refs, true);
   }
-  const stored = (records as unknown as Record<string, Research>)[symbol];
-  if (!stored) throw new SourceError('Research has not been collected for this symbol. Current coverage: AMD, AAPL, MSFT, CAT, TXN, AGX and AMZN.', 404);
-  if (stored.version !== MODEL_VERSION) throw new SourceError('This research record requires a model refresh.', 503);
-  const r: Research = structuredClone(stored);
-  const age = daysBetween(r.retrievedAt.slice(0, 10), new Date().toISOString().slice(0, 10)) - 1;
-  if (age > 2) r.findings.push({ code: 'COLLECTION_AGE', severity: 'warning', message: `The last accepted collection is ${age} days old. The displayed dates and saved assumptions belong to that collection.` });
-  return r;
+  const { secData } = await import('./sec.server');
+  return researchFromSec(await secData(symbol, progress), progress);
+}
+
+export function researchFromSec(raw: SecCompany, progress: Progress = () => {}): Research {
+  progress('Checking inputs and calculating value');
+  const name = industryName(raw.symbol, Number(raw.submissions.sic), Number(raw.submissions.cik));
+  const refs = name ? (referenceSnapshots as unknown as Record<string, ReferenceSet>)[name] : null;
+  const result = createResearch(raw.symbol, raw, refs);
+  result.origin = 'SEC on-demand';
+  result.references.push(...raw.references);
+  for (const source of raw.references.filter(ref => typeof ref.values.review === 'string')) result.findings.push({ code: 'AMENDMENT_REVIEW', severity: 'warning', message: `${source.name}: ${source.values.review}` });
+  if (!result.specialized && (!raw.latestPeriod || result.current?.end !== raw.latestPeriod)) {
+    result.findings.push({ code: 'LATEST_FILING', severity: 'error', message: raw.latestPeriod ? `A financial filing through ${raw.latestPeriod} exists, but the inputs do not reconcile to that period. A value is withheld.` : 'The latest financial reporting date could not be verified. A value is withheld.' });
+    result.input = null; result.assumptions = null; result.serverScenarios = null;
+  }
+  return result;
 }
 
 export function observedGrowth(current: Period, periods: Period[]) {
@@ -46,7 +55,8 @@ export function createResearch(symbol: string, raw: { facts: CompanyFacts; submi
   const { facts, submissions: company, retrievedAt } = raw;
   if (!company || typeof company.name !== 'string' || !Array.isArray(company.tickers) || !company.tickers.includes(symbol) || Number(company.cik) !== Number(facts.cik)) throw new Error('The source CIK and submissions symbol must identify the same company.');
   const { periods, current, findings } = normalize(facts, retrievedAt);
-  const profile = (coverage as Record<string, { cik: number; industry: string; specialized?: string }>)[symbol];
+  const candidate = (coverage as Record<string, { cik: number; industry: string; specialized?: string }>)[symbol];
+  const profile = candidate?.cik === Number(company.cik) ? candidate : null;
   const sic = Number(company.sic);
   const specialized = !!profile?.specialized || (sic >= 6000 && sic <= 6799) || /bank|insurance|real estate investment trust/i.test(company.sicDescription ?? '');
   if (specialized) findings.push({ code: 'SPECIALIZED', severity: 'error', message: profile?.specialized ?? 'SPECIALIZED VALUATION REQUIRED. This business requires a model other than generic operating-company FCFF.' });
@@ -57,8 +67,9 @@ export function createResearch(symbol: string, raw: { facts: CompanyFacts; submi
   const metadata: Submissions = { cik: company.cik, name: company.name, sic: company.sic, sicDescription: company.sicDescription, tickers: company.tickers, exchanges: company.exchanges, fiscalYearEnd: company.fiscalYearEnd, entityType: company.entityType };
   const result: Research = { version: MODEL_VERSION, symbol, company: metadata, retrievedAt, origin: userImport ? 'User import' : 'SEC collection', inputDigest: createHash('sha256').update(JSON.stringify({ facts, company })).digest('hex'), periods, current, findings, references: [], industry: null, assumptions: null, assumptionNotes: [], input: null, specialized, serverScenarios: null };
   if (specialized || !current || findings.some(f => f.severity === 'error')) return result;
-  if (!industryName(symbol, sic)) { findings.push({ code: 'INDUSTRY_UNMAPPED', severity: 'error', message: 'This industry needs a reviewed reference mapping.' }); return result; }
+  if (!industryName(symbol, sic, Number(company.cik))) { findings.push({ code: 'INDUSTRY_UNMAPPED', severity: 'error', message: `SEC industry code ${company.sic} has no supported valuation reference mapping. The financial statements are available; a value requires industry review.` }); return result; }
   if (!refs?.industry) { findings.push({ code: 'REFERENCE_UNAVAILABLE', severity: 'error', message: 'No accepted industry and discount-rate reference set is available.' }); return result; }
+  if (!profile) findings.push({ code: 'INDUSTRY_PROXY', severity: 'warning', message: `SEC industry code ${company.sic} maps to ${refs.industry.name}. This documented industry proxy may not represent every business segment. Review the reference choice and investment productivity.` });
   result.references = [...refs.references];
   result.industry = refs.industry;
   const industry = refs.industry;

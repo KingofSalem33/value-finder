@@ -4,6 +4,7 @@ import { pathToFileURL } from 'node:url';
 import { gzipSync, gunzipSync } from 'node:zlib';
 import * as cheerio from 'cheerio';
 import coverage from '../src/data/coverage.json';
+import industryMap from '../src/data/industry-map.json';
 import type { Reference, ReferenceSet } from '../src/lib/types';
 
 const NYU = 'https://pages.stern.nyu.edu/~adamodar/New_Home_Page/';
@@ -106,14 +107,14 @@ async function main() {
   for (const page of ['Betas', 'margin', 'roc', 'capex', 'wacc']) pages[page] = await capture(`${NYU}datafile/${page}.html`, 14 * DAY);
   const reference = (name: string, url: string, asOf: string, source: Capture, values: Reference['values']): Reference => ({ name, url, asOf, retrievedAt: source.retrievedAt, values: { ...values, sha256: source.sha256, archive: `/filings/${source.sha256}.gz` } });
   const snapshot: Record<string, ReferenceSet> = {};
-  for (const name of new Set(Object.values(coverage).map(p => p.industry))) {
+  for (const name of new Set([...Object.values(coverage).map(p => p.industry), ...industryMap.map(p => p.industry)])) {
     const r = Object.fromEntries(Object.entries(pages).map(([page, source]) => {
       const row = rows(source.text).find(row => row[0] === name);
       if (!row) throw new Error(`Industry ${name} is absent from ${page}.`);
       return [page, row];
     }));
     const industry = { name, unleveredBeta: numeric(r.Betas[5]), debtEquity: numeric(r.Betas[3]), margin: numeric(r.margin[5]), roic: numeric(r.roc[8]), salesCapital: numeric(r.capex[9]), costDebt: numeric(r.wacc[6]) };
-    if (industry.unleveredBeta <= 0 || industry.salesCapital <= 0 || industry.roic <= 0 || industry.debtEquity < 0 || industry.margin <= 0 || industry.costDebt <= 0 || marginalTax < 0 || marginalTax > .6) throw new Error('Industry or tax reference is outside supported bounds.');
+    if (industry.unleveredBeta <= 0 || industry.salesCapital <= 0 || industry.debtEquity < 0 || industry.costDebt <= 0 || marginalTax < 0 || marginalTax > .6) throw new Error(`Industry or tax reference is outside supported bounds: ${name}.`);
     const references: Reference[] = [
       reference('US Treasury — 10-year par yield', treasuryUrl, observation.date, treasury.capture, { treasury: observation.rate, convention: 'Unadjusted US Treasury proxy' }),
       reference('Damodaran — US marginal tax', countryUrl, pageDate(country.text), country.capture, { marginalTax }),

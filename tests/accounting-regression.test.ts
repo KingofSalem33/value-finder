@@ -1,4 +1,4 @@
-import { test, mock } from 'node:test';
+import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { daysBetween, includesFinanceLeases, includesShortDebt, normalize } from '../src/lib/normalize';
 import { buildResearch, observedGrowth } from '../src/lib/research';
@@ -68,11 +68,6 @@ test('unknown allocations stay blank without changing total FCFF', () => {
   const base = calculate(input, assumptions); const unknown = calculate(input, { ...assumptions, wcRatio: null, daRatio: null });
   assert.equal(unknown.enterpriseValue, base.enterpriseValue);
   for (const year of unknown.years) { assert.equal(year.da, null); assert.equal(year.capex, null); assert.equal(year.workingCapital, null); }
-});
-
-test('a stock search does not call financial providers', async () => {
-  const calls: string[] = []; const spy = mock.method(globalThis, 'fetch', async (input: unknown) => { calls.push(String(input)); throw new Error('Unexpected external request'); });
-  try { await assert.rejects(buildResearch('NOTCOLLECTED'), /not been collected/); assert.deepEqual(calls, []); } finally { spy.mock.restore(); }
 });
 
 test('a standalone quarter is never substituted for fiscal YTD', () => {
