@@ -14,12 +14,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -215,12 +215,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -416,12 +416,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -617,12 +617,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -818,12 +818,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -1019,12 +1019,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -1220,12 +1220,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -1421,12 +1421,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -1622,12 +1622,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -1823,12 +1823,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -2024,12 +2024,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -2225,12 +2225,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -2426,12 +2426,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -2627,12 +2627,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -2828,12 +2828,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -3029,12 +3029,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -3230,12 +3230,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -3431,12 +3431,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -3632,12 +3632,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -3833,12 +3833,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -4034,12 +4034,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -4235,12 +4235,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -4436,12 +4436,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -4637,12 +4637,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -4838,12 +4838,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -5039,12 +5039,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -5240,12 +5240,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -5441,12 +5441,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -5642,12 +5642,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -5843,12 +5843,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -6044,12 +6044,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -6245,12 +6245,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -6446,12 +6446,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -6647,12 +6647,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -6848,12 +6848,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -7049,12 +7049,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -7250,12 +7250,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -7451,12 +7451,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -7652,12 +7652,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -7853,12 +7853,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -8054,12 +8054,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -8255,12 +8255,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -8456,12 +8456,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -8657,12 +8657,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -8858,12 +8858,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -9059,12 +9059,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -9260,12 +9260,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -9461,12 +9461,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -9662,12 +9662,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -9863,12 +9863,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -10064,12 +10064,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -10265,12 +10265,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -10466,12 +10466,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -10667,12 +10667,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -10868,12 +10868,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -11069,12 +11069,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -11270,12 +11270,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -11471,12 +11471,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -11672,12 +11672,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -11873,12 +11873,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -12074,12 +12074,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -12275,12 +12275,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -12476,12 +12476,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -12677,12 +12677,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -12878,12 +12878,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {
@@ -13079,12 +13079,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-02",
-        "retrievedAt": "2026-11-02T21:59:40.684Z",
+        "retrievedAt": "2026-11-03T19:30:10.365Z",
         "values": {
           "treasury": 0.049100000000000005,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-          "archive": "/filings/3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e.gz"
+          "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+          "archive": "/filings/77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7.gz"
         }
       },
       {

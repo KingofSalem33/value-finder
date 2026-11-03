@@ -1,7 +1,7 @@
 {
   "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026": {
-    "sha256": "3d43bbdccefc1b7adba40babb0848afa68b525a5066424750adb6b189f2b520e",
-    "retrievedAt": "2026-11-02T21:59:40.684Z",
+    "sha256": "77366fb9fafaa767bbb5a37eae89d69940b5f886c7ae31546d6e5ebdc1f28cb7",
+    "retrievedAt": "2026-11-03T19:30:10.365Z",
     "etag": null,
     "lastModified": null,
     "bytes": 325123
