@@ -9,7 +9,7 @@ const local = (key: string) => key.split(':').at(-1)!;
 const child = (node: Node, name: string) => node[Object.keys(node).find(key => local(key) === name) ?? ''];
 const text = (value: unknown): string => typeof value === 'string' ? value : String(object(value)['#text'] ?? '');
 const date = (value: unknown) => /^\d{4}-\d{2}-\d{2}$/.test(text(value)) ? text(value) : null;
-export const usedTags = new Set([...Object.values(TAGS).flat().map(tag => tag.split(':').at(-1)!), 'EntityPublicFloat']);
+export const usedTags = new Set([...Object.values(TAGS).flat().map(tag => tag.split(':').at(-1)!), 'EntityPublicFloat', 'NotesPayableCurrent', 'LongTermNotesAndLoans', 'CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents', 'PaymentsToAcquireOtherPropertyPlantAndEquipment']);
 
 export interface Filing { cik: number; accession: string; filed: string; form: string; end: string; document: string }
 

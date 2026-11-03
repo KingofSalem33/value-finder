@@ -6,7 +6,7 @@ import { MODEL_VERSION, marginOfSafety, reverseDcf, scenarios } from '@/lib/valu
 import { readResearchResponse } from '@/lib/research-stream';
 import { TAGS } from '@/lib/normalize';
 import { validSnapshot, type SavedValuation as Saved } from '@/lib/snapshot';
-import { researchStatus } from '@/lib/status';
+import { researchStatus, valuationBlocker } from '@/lib/status';
 import AssumptionEditor from './assumption-editor';
 import { Audit, Disclosure, Forecast, History, Sensitivity, Sources, Wacc } from './research-details';
 import { money, pct } from './format';
@@ -96,7 +96,7 @@ export default function ResearchApp() {
           <div><h3>Margin of safety</h3>{publishValue && validPrice ? <strong className={safety !== null && safety < 0 ? 'negative' : 'mint'}>{pct(safety)}</strong> : <span className="comparison-pending">{publishValue ? 'Enter price and date' : 'Valuation unavailable'}</span>}</div>
         </div>
         {publishValue && modeled && <div className="scenario-range" aria-label="Scenario values in USD per share">{(['bear', 'base', 'bull'] as const).map(key => <div key={key}><span>{key[0].toUpperCase() + key.slice(1)}</span><strong>{modeled[key].result && modeled[key].result!.equityValue > 0 ? money(modeled[key].result!.perShare) : '—'}</strong></div>)}</div>}
-        {!publishValue && <p className="withheld">{research.specialized ? 'This business needs a specialized model. A generic FCFF value is not shown.' : modeled?.base.error ?? 'The required financial inputs are incomplete or inconsistent. A per-share estimate is not shown.'}</p>}
+        {!publishValue && <p className="withheld">{valuationBlocker(research, base, modeled?.base.error)}</p>}
         {a && <Disclosure title="Assumptions">
           <AssumptionEditor research={research} assumptions={a} onChange={setA} mode={mode} setMode={setMode} note={note} setNote={setNote}/>
           <Disclosure title="WACC calculation"><Wacc a={a}/></Disclosure>

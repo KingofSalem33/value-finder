@@ -96,6 +96,8 @@ Broad current borrowing tags can include short-term debt and current leases. Lea
 
 [Dated accounting rules](src/data/accounting-review.json) can use an explicit qualitative disclosure. The AGX July 31, 2026 no-debt statement is one such rule. The collector checks its source text and accession. It does not carry that zero into a later period.
 
+When cash, debt or cash CapEx is missing, the server also checks exact row labels in the original SEC statements. It uses the associated XBRL tag and context to classify the reported number. It does not infer an amount from an absent row or use an ambiguous statement. Source hashes, labels and original tags remain available. A dated Palantir June 30, 2026 disclosure supports its zero-debt input only for that period. A withheld value states the actual missing input or eligibility check.
+
 Automatic growth blends comparable annual history with current YTD year-over-year growth. It is a model policy, not consensus. Margins retain a company-specific starting point. Growth requires reinvestment. Industry capital productivity is a provisional fallback when complete company operating-capital history is missing. Unknown CapEx, D&A, or working-capital forecast allocations stay blank; total investment and FCFF remain separately calculated.
 
 Current excess investment is held through ten years unless an analyst supports another capital plan. This can be too severe for a temporary capital cycle. GAAP EBIT retains SBC and acquisition amortization. Segment economics, normalization duration, management guidance, operating cash requirements, and omitted financing claims require analyst work.

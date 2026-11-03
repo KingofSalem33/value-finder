@@ -3,6 +3,8 @@ import { setTimeout as delay } from 'node:timers/promises';
 import { gzipSync, gunzipSync } from 'node:zlib';
 import { SourceError } from './sources';
 import { parseInstance, usedTags, type Filing } from './xbrl';
+import { normalize } from './normalize';
+import { statementKey, statementRoles } from './statement-roles';
 import reviews from '../data/accounting-review.json';
 import type { CompanyFacts, Reference, Submissions } from './types';
 
@@ -173,9 +175,32 @@ export function createSecService({ read, cache = memoryCache() }: Options) {
           facts.filingFacts!.push(...extracted.rows);
           references.push(reference(`SEC — ${filing.form} — ${filing.end}`, extracted.source, filing.end, { accession: filing.accession, filed: filing.filed, ...(extracted.amendmentWithoutInstance ? { review: 'This amendment has no extracted XBRL instance. Base filing facts and Company Facts are used. Review the amendment for financial changes.' } : {}) }));
         }
+        const missing = normalize(facts, new Date().toISOString()).findings.filter(finding => finding.severity === 'error').map(finding => finding.code);
+        const documents = new Map<string, Capture>();
+        if (missing.some(code => ['MISSING_debt', 'MISSING_cash', 'MISSING_capex'].includes(code))) {
+          for (const filing of selected.filter(filing => missing.includes('MISSING_capex') || filing.end === latestPeriod)) {
+            const url = `https://www.sec.gov/Archives/edgar/data/${cik}/${filing.accession.replaceAll('-', '')}/${filing.document}`;
+            try {
+              const document = await read(url, signal);
+              const roles = statementRoles(document.body);
+              for (const fact of facts.filingFacts!.filter(fact => fact.accn === filing.accession && fact.context)) {
+                const role = roles.get(statementKey(fact.tag, fact.context!));
+                if (!role) continue;
+                fact.statementMetric = role.metric;
+                fact.note = `Source statement row: ${role.label}. The original XBRL tag and value are retained.`;
+              }
+              documents.set(url, document);
+              references.push(reference(`SEC — statement labels — ${filing.end}`, document, filing.end, { accession: filing.accession, filed: filing.filed }));
+            } catch (error) {
+              // Optional classification must not discard otherwise usable XBRL.
+              const source = references.find(ref => ref.values.accession === filing.accession);
+              if (source) source.values.review = `Source statement labels could not be verified. ${error instanceof Error ? error.message : 'The original XBRL remains available.'}`;
+            }
+          }
+        }
         // Dated qualitative rules require their original disclosure and accession on every new bundle.
         for (const rule of reviews.filter(rule => rule.cik === cik && rule.end === latestPeriod && recent.accessionNumber.includes(rule.accn) && recent.filingDate[recent.accessionNumber.indexOf(rule.accn)] === rule.filed)) {
-          const disclosure = await read(rule.url, signal);
+          const disclosure = documents.get(rule.url) ?? await read(rule.url, signal);
           const plain = disclosure.body.replace(/<[^>]*>/g, ' ').replace(/&nbsp;|&#160;/g, ' ').replace(/\s+/g, ' ');
           if (!plain.toLowerCase().includes(rule.requiredText.toLowerCase())) throw new SourceError('The dated accounting disclosure could not be verified.', 422);
           const { symbol: _symbol, cik: _cik, requiredText: _required, ...fact } = rule;

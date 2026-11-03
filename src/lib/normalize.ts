@@ -47,7 +47,8 @@ export function getFact(data: CompanyFacts, metric: Metric, start: string, end: 
     }
   });
   for (const f of data.filingFacts ?? []) {
-    const priority = tags.findIndex(tag => tag.includes(':') ? tag === f.tag : f.tag === `us-gaap:${tag}` || f.tag === `dei:${tag}`);
+    const tagPriority = tags.findIndex(tag => tag.includes(':') ? tag === f.tag : f.tag === `us-gaap:${tag}` || f.tag === `dei:${tag}`);
+    const priority = tagPriority >= 0 ? tagPriority : f.statementMetric === metric ? tags.length : -1;
     if (priority < 0 || !allowed(f) || f.filed > asOf || f.end !== end || Object.keys(f.dimensions ?? {}).length) continue;
     if (metric === 'shares' || metric === 'currentShares' ? f.unit !== 'shares' : !/^[A-Z]{3}$/.test(f.unit)) continue;
     if (INSTANT.has(metric) ? !!f.start : f.start !== start) continue;
@@ -63,7 +64,7 @@ export function getFact(data: CompanyFacts, metric: Metric, start: string, end: 
   const peers = candidates.filter(c => c.fact.accn === f.accn && c.fact.filed === f.filed && c.priority === selected.priority && c.unit === unit);
   const tolerance = (fact: RawFact) => typeof fact.decimals === 'number' ? .5 * 10 ** -fact.decimals : 0;
   if (peers.some(c => Math.abs(c.fact.val - f.val) > Math.max(1e-8, tolerance(c.fact) + tolerance(f)))) return undefined;
-  return { value: f.val, metric, tag, unit, currency: unit === 'shares' ? null : unit, start: f.start ?? null, end: f.end, filed: f.filed, accession: f.accn, form: f.form, retrievedAt: f.retrievedAt ?? retrievedAt, url: f.url ?? filingUrl(data.cik, f.accn), ...(f.context ? { context: f.context, decimals: f.decimals } : {}), ...(f.note ? { note: f.note } : {}) };
+  return { value: f.val, metric, tag, unit, currency: unit === 'shares' ? null : unit, start: f.start ?? null, end: f.end, filed: f.filed, accession: f.accn, form: f.form, retrievedAt: f.retrievedAt ?? retrievedAt, url: f.url ?? filingUrl(data.cik, f.accn), ...(f.context ? { context: f.context, decimals: f.decimals } : {}), ...(f.note ? { note: f.note } : {}), ...('statementMetric' in f ? { statementMetric: f.statementMetric as Metric } : {}) };
 }
 
 function derived(metric: Metric, sources: Evidence[], value: number, note: string): Evidence {
@@ -71,7 +72,7 @@ function derived(metric: Metric, sources: Evidence[], value: number, note: strin
   return { ...newest, metric, value, tag: 'derived', derivedFrom: sources, note };
 }
 
-export const includesShortDebt = (e: Evidence): boolean => /(?:^|:)DebtCurrent$|DebtLongtermAndShorttermCombinedAmount/.test(e.tag) || !!e.derivedFrom?.some(includesShortDebt);
+export const includesShortDebt = (e: Evidence): boolean => e.statementMetric === 'debtCurrent' || /(?:^|:)DebtCurrent$|DebtLongtermAndShorttermCombinedAmount/.test(e.tag) || !!e.derivedFrom?.some(includesShortDebt);
 export function includesFinanceLeases(e: Evidence, term: 'current' | 'noncurrent' | 'both' = 'both'): boolean {
   if (term === 'both') return includesFinanceLeases(e, 'current') && includesFinanceLeases(e, 'noncurrent');
   if (e.derivedFrom) return e.derivedFrom.some(component => includesFinanceLeases(component, term));
@@ -159,9 +160,11 @@ export function normalize(data: CompanyFacts, retrievedAt: string): { periods: P
     } else findings.push({ code: 'NO_TTM', severity: 'warning', message: 'A quarterly report exists, but a comparable prior YTD period is missing. The annual model is used.' });
   } else if (revenueFacts.some(f => /^10-Q/.test(f.form) && f.end > annual.end)) findings.push({ code: 'NO_TTM', severity: 'warning', message: 'A quarterly report exists, but fiscal YTD revenue is missing. Standalone quarters are not treated as YTD. The annual model is used.' });
   const v = current.values;
-  for (const key of ['revenue', 'ebit', 'ocf', 'capex', 'cash', 'debt', 'shares'] as Metric[]) {
-    if (!v[key]) findings.push({ code: `MISSING_${key}`, severity: 'error', message: `Required financial input is missing: ${key}. No zero was substituted.` });
+  const required = { revenue: 'revenue', ebit: 'operating income', ocf: 'operating cash flow', capex: 'capital expenditure', cash: 'cash and cash equivalents', debt: 'total interest-bearing debt', shares: 'diluted shares' };
+  for (const key of Object.keys(required) as (keyof typeof required)[]) {
+    if (!v[key]) findings.push({ code: `MISSING_${key}`, severity: 'error', message: `Could not verify ${required[key]} for the period ended ${current.end}.` });
   }
+  if (v.cash?.statementMetric === 'cash' && /RestrictedCash/.test(v.cash.tag)) findings.push({ code: 'CASH_SCOPE', severity: 'warning', message: 'The balance sheet labels the selected amount cash and cash equivalents, but its XBRL tag also refers to restricted cash. Verify the amount available to shareholders.' });
   const currencies = new Set(Object.values(v).filter(x => x.unit !== 'shares').map(x => x.currency));
   if (currencies.size !== 1 || !currencies.has('USD')) findings.push({ code: 'CURRENCY', severity: 'error', message: 'Only consistent USD financial statements and USD listed shares are supported. Currency conversion requires review.' });
   if (v.revenue && v.revenue.value <= 0) findings.push({ code: 'REVENUE', severity: 'error', message: 'Revenue must be positive.' });

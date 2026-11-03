@@ -12,5 +12,19 @@
     "url": "https://www.sec.gov/Archives/edgar/data/100591/000110465926104735/agx-20260902xex99d1.htm",
     "requiredText": "the Company had no debt",
     "note": "The earnings release states that the company had no debt at July 31, 2026. This is a dated qualitative disclosure, not a missing XBRL amount changed to zero. Separate leases, bonding and other obligations still require review."
+  },
+  {
+    "symbol": "PLTR",
+    "cik": 1321655,
+    "tag": "review:DebtFree",
+    "unit": "USD",
+    "val": 0,
+    "end": "2026-06-30",
+    "form": "10-Q",
+    "filed": "2026-08-04",
+    "accn": "0001321655-26-000041",
+    "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000041/pltr-20260630.htm",
+    "requiredText": "As of June 30, 2026, we had no outstanding debt balances",
+    "note": "The liquidity section states that no debt balances were outstanding at June 30, 2026. This dated disclosure does not establish zero debt for another period or exclude lease obligations."
   }
 ]

@@ -4,7 +4,7 @@ Model: `fcff-2.1.0`. Checked on November 2-3, 2026. This record separates softwa
 
 ## Automated checks
 
-- 89 TypeScript tests pass. They include the prior FCFF, WACC, TTM, bridge, currency/share, missing-value and independent Decimal checks.
+- 99 TypeScript tests pass. They include the prior FCFF, WACC, TTM, bridge, currency/share, missing-value and independent Decimal checks, plus source-statement fallback and explicit blocker messages.
 - The runtime XBRL parser agrees with the independent EdgarTools extract for all used facts in AMD's latest annual and quarterly source instances. Tests also check negative amounts, reported zero, nil exclusion, dimensions, issuer identity, precision and unsafe entity declarations.
 - On-demand tests cover symbols outside the regression set, source errors, mismatched CIKs, cache isolation and coalescing, source timestamps, latest-period guards, amendments without extracted XBRL, background cache progress, streamed error handling, abortable SEC queue deadlines and margin-of-safety arithmetic.
 - TypeScript checks and the read-only unused-code check pass.
@@ -13,6 +13,12 @@ Model: `fcff-2.1.0`. Checked on November 2-3, 2026. This record separates softwa
 - The existing seven archived records remain an offline regression gate. They do not supply stock-search results.
 
 ## Source retrieval
+
+The November 3 source-reader check used a fixed additional sample of 20 operating-company symbols. The prior live release produced 10 values. The updated local production build produced 15: PLTR, UBER, NFLX, PG and PEP recovered. All 10 previously available per-share results stayed identical. ORCL still requires share-basis review, as does GOOGL. LLY still lacks a supported operating-income input. XOM lacks usable annual revenue history in the retrieved sources. DE still lacks complete supported operating-income and debt inputs.
+
+The new compressed fixture contains genuine SEC XBRL and statement tables for PG, PEP, NFLX, UBER, ORCL and LLY, with original URLs and document hashes. Tests compare selected cash, debt and CapEx to independently read statement amounts. They also reject ambiguous balance sheets and unclassified short-term borrowing, check that current debt is not added twice, and retain withholding when statement-label retrieval fails. Palantir's dated zero-debt disclosure is checked against the original current-period filing. Missing values are not converted to zero.
+
+Source-reader browser checks cover recovered valuations and specific unresolved-input/share-basis messages. Local API evidence is in ignored `output/coverage-audit/after-local`; live release checks are recorded separately. These checks establish the tested extraction behavior, not complete accounting coverage or valuation accuracy.
 
 Direct on-demand retrieval and calculation passed for AMD, AAPL, MSFT, TXN, AGX, AMZN, NVDA and COST. CAT retained its specialized-model refusal. JNJ retrieved financials but did not produce a value because complete supported EBIT and debt inputs were missing. This is an accounting-review outcome, not evidence that the business has no value.
 

@@ -10,6 +10,7 @@ A stock search resolves a SEC-listed company, retrieves or reuses source inputs,
 | --- | --- |
 | SEC directory, submissions, financials, filing selection, source bounds and pacing | `src/lib/sec.ts` |
 | Extracted XBRL facts, contexts, units, precision and dimension exclusion | `src/lib/xbrl.ts` |
+| Exact primary-statement row classification for missing cash, debt and CapEx | `src/lib/statement-roles.ts` |
 | Next.js persistent input cache | `src/lib/sec.server.ts` |
 | Fiscal matching, amendments, D&A, debt scope and TTM | `src/lib/normalize.ts` |
 | Eligibility, forecast policy and industry-reference choice | `src/lib/research.ts`, `src/lib/sources.ts`, `src/data/industry-map.json` |
@@ -25,7 +26,7 @@ A stock search resolves a SEC-listed company, retrieves or reuses source inputs,
 1. Validate the symbol and resolve the SEC CIK and exchange. Verify the symbol again against submissions.
 2. Read recent filing metadata. The latest relevant accessions identify the financial-input cache key.
 3. Retrieve Company Facts and the latest annual and subsequent quarterly extracted XBRL. Include amendments for these periods. Qualitative accounting rules require their exact dated disclosure.
-4. Exclude dimensional facts and unsupported custom concepts. Preserve reported zeros, losses, units, context and precision.
+4. Exclude dimensional facts and unsupported custom concepts. Preserve reported zeros, losses, units, context and precision. If cash, debt or CapEx is missing, read the original SEC statement labels. A single identifiable statement and an exact supported row label can classify an existing numeric XBRL fact by tag and context. Multiple matching statements do not receive a guessed classification. The original tag and value remain unchanged; the HTML source also retains its hash and retrieval time.
 5. The existing TypeScript accounting owner selects periods and facts. A newer reported period that cannot be normalized prevents a value.
 6. The forecast owner selects dated industry references and explains each policy. The same engine calculates server and analyst results.
 7. Stream actual acquisition progress and the result. Save/export retains selected financial evidence, assumptions, source metadata, model version and price date.
@@ -35,6 +36,8 @@ A stock search resolves a SEC-listed company, retrieves or reuses source inputs,
 The directory has a 24-hour TTL. Submissions have a five-minute TTL. Compact financial bundles have a one-hour TTL and include the selected accession fingerprint. A new filing chooses a new bundle. Parsed instances have a 30-day TTL keyed by accession. A bounded process cache coalesces reads; Next.js supplies persistent caching. Persistent entries use gzip encoding capped at 1.5 MB; larger encoded entries bypass storage without changing or dropping their financial values. Source timestamps remain the time of actual retrieval. Progress callbacks do not run inside persistent cache refresh work.
 
 Original on-demand HTTP bodies are hashed but are not durably archived. Saved/exported evidence makes the selected model inputs reproducible. Separate offline regression captures retain original source bodies under `public/filings`. No database or Python web service is used.
+
+The persistent cache namespace is `sec-on-demand-3`. It separates the statement-reader input format from prior cached bundles. Statement-label retrieval is optional: a failed read preserves the XBRL and the unresolved input remains unavailable.
 
 ## Failure and scope boundaries
 

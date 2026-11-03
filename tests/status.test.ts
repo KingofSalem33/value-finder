@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { researchStatus } from '../src/lib/status';
+import { researchStatus, valuationBlocker } from '../src/lib/status';
 import { buildResearch } from '../src/lib/research';
 import type { Research } from '../src/lib/types';
 import { calculate } from '../src/lib/valuation';
@@ -13,6 +13,14 @@ test('missing accounting inputs are distinguished from invalid model edits', () 
   assert.equal(researchStatus({ ...r, current: null }, null), 'DATA UNAVAILABLE');
   assert.equal(researchStatus({ ...r, specialized: true }, null), 'SPECIALIZED VALUATION REQUIRED');
   assert.notEqual(researchStatus({ ...r, findings: [] }, calculate(input, assumptions)), 'VERIFIED INPUTS');
+});
+
+test('a withheld value states the actual blocker and prioritizes specialized methods', () => {
+  const findings = [{ code: 'MISSING_debt', severity: 'error' as const, message: 'Could not verify total interest-bearing debt for the period ended 2026-06-30.' }];
+  const r = { specialized: false, findings } as Research;
+  assert.equal(valuationBlocker(r, null), findings[0].message);
+  assert.equal(valuationBlocker(r, null, 'WACC must exceed terminal growth.'), 'WACC must exceed terminal growth.');
+  assert.equal(valuationBlocker({ ...r, specialized: true, findings: [...findings, { code: 'SPECIALIZED', severity: 'error', message: 'Separate industrial and financing operations.' }] }, null), 'Separate industrial and financing operations.');
 });
 
 test('CAT financial services require a specialized valuation', async () => {
