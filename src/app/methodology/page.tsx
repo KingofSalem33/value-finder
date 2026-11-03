@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { MODEL_VERSION } from '@/lib/valuation';
 
 export default function Methodology() {
-  return <div className="app-shell"><header><Link className="brand" href="/">Value Finder<span className="brand-dot"/></Link><Link href="/">Research ↗</Link></header><main className="prose"><h1>Methodology & limits</h1>
+  return <div className="app-shell"><header><Link className="brand" href="/">Value Finder</Link><Link href="/">Research</Link></header><main className="prose"><h1>Methodology & limits</h1>
     <p>This site estimates common equity value from future free cash flow to the firm. The estimate depends on its inputs and assumptions. It is a research starting point. Forecast accuracy has not been calibrated.</p>
     <h2>Cash flows before financing</h2>
     <div className="formula">FCFF = EBIT × (1 − tax rate) − reinvestment<br/>Reinvestment = net CapEx + change in operating working capital<br/>Enterprise value = Σ FCFFₜ / (1 + WACC)ᵗ + terminal value / (1 + WACC)¹⁰</div>

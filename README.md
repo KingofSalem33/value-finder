@@ -125,6 +125,10 @@ See [verification evidence and remaining limits](docs/VERIFICATION.md). Passing 
 
 ## Save and reproduce
 
+The result screen groups intrinsic value, an entered market price and date, margin of safety, and scenario values. Assumptions, financials, market expectations, sensitivity, and data checks expand below the result. Market expectations appear after a valid price and date are entered. A missing comparison requests the required input instead of displaying an empty score.
+
+Save, export, and import controls are under **Valuation files**. Other model inputs, WACC calculations, scenario policies, source records, and audit findings remain available in the supporting sections.
+
 Initial calculations run on the server. Analyst changes use the same TypeScript engine in the browser. Saved and exported results retain inputs, assumptions, source metadata, model version, and price date. Saved records from previous models remain in their old browser storage keys; this version uses the v3 key. Incompatible model exports are rejected rather than recalculated silently.
 
 `python scripts/package-source.py` creates `public/source.zip`. It includes source, tests, workflow, captured data, and public source archives. It excludes credentials, dependencies, local output, and browser state.
