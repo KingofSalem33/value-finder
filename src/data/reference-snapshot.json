@@ -14,12 +14,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -86,7 +86,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -215,12 +215,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -287,7 +287,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -416,12 +416,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -488,7 +488,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -617,12 +617,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -689,7 +689,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -818,12 +818,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -890,7 +890,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -1019,12 +1019,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -1091,7 +1091,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -1220,12 +1220,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -1292,7 +1292,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -1421,12 +1421,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -1493,7 +1493,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -1622,12 +1622,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -1694,7 +1694,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -1823,12 +1823,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -1895,7 +1895,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -2024,12 +2024,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -2096,7 +2096,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -2225,12 +2225,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -2297,7 +2297,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -2426,12 +2426,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -2498,7 +2498,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -2627,12 +2627,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -2699,7 +2699,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -2828,12 +2828,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -2900,7 +2900,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -3029,12 +3029,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -3101,7 +3101,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -3230,12 +3230,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -3302,7 +3302,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -3431,12 +3431,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -3503,7 +3503,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -3632,12 +3632,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -3704,7 +3704,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -3833,12 +3833,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -3905,7 +3905,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -4034,12 +4034,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -4106,7 +4106,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -4235,12 +4235,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -4307,7 +4307,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -4436,12 +4436,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -4508,7 +4508,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -4637,12 +4637,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -4709,7 +4709,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -4838,12 +4838,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -4910,7 +4910,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -5039,12 +5039,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -5111,7 +5111,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -5240,12 +5240,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -5312,7 +5312,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -5441,12 +5441,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -5513,7 +5513,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -5642,12 +5642,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -5714,7 +5714,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -5843,12 +5843,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -5915,7 +5915,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -6044,12 +6044,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -6116,7 +6116,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -6245,12 +6245,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -6317,7 +6317,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -6446,12 +6446,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -6518,7 +6518,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -6647,12 +6647,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -6719,7 +6719,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -6848,12 +6848,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -6920,7 +6920,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -7049,12 +7049,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -7121,7 +7121,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -7250,12 +7250,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -7322,7 +7322,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -7451,12 +7451,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -7523,7 +7523,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -7652,12 +7652,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -7724,7 +7724,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -7853,12 +7853,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -7925,7 +7925,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -8054,12 +8054,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -8126,7 +8126,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -8255,12 +8255,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -8327,7 +8327,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -8456,12 +8456,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -8528,7 +8528,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -8657,12 +8657,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -8729,7 +8729,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -8858,12 +8858,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -8930,7 +8930,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -9059,12 +9059,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -9131,7 +9131,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -9260,12 +9260,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -9332,7 +9332,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -9461,12 +9461,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -9533,7 +9533,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -9662,12 +9662,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -9734,7 +9734,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -9863,12 +9863,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -9935,7 +9935,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -10064,12 +10064,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -10136,7 +10136,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -10265,12 +10265,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -10337,7 +10337,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -10466,12 +10466,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -10538,7 +10538,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -10667,12 +10667,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -10739,7 +10739,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -10868,12 +10868,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -10940,7 +10940,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -11069,12 +11069,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -11141,7 +11141,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -11270,12 +11270,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -11342,7 +11342,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -11471,12 +11471,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -11543,7 +11543,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -11672,12 +11672,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -11744,7 +11744,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -11873,12 +11873,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -11945,7 +11945,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -12074,12 +12074,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -12146,7 +12146,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -12275,12 +12275,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -12347,7 +12347,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -12476,12 +12476,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -12548,7 +12548,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -12677,12 +12677,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -12749,7 +12749,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -12878,12 +12878,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -12950,7 +12950,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
@@ -13079,12 +13079,12 @@
         "name": "US Treasury — 10-year par yield",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026",
         "asOf": "2026-11-10",
-        "retrievedAt": "2026-11-11T19:35:09.239Z",
+        "retrievedAt": "2026-11-12T19:53:42.076Z",
         "values": {
           "treasury": 0.049800000000000004,
           "convention": "Unadjusted US Treasury proxy",
-          "sha256": "8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc",
-          "archive": "/filings/8a1e0e525169aadae7be8785a278bbe7eb415b16b6b5439f0a96ccbec50104dc.gz"
+          "sha256": "57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66",
+          "archive": "/filings/57cc8241f7a40ab01ec830d8112576dc44abfd145d9bbd47adc4a2c6914fde66.gz"
         }
       },
       {
@@ -13151,7 +13151,7 @@
         "name": "Damodaran — monthly implied ERP",
         "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm",
         "asOf": "2026-11-01",
-        "retrievedAt": "2026-11-11T19:35:09.725Z",
+        "retrievedAt": "2026-11-12T19:53:42.276Z",
         "values": {
           "erp": 0.0441,
           "variant": "Trailing 12 month, adjusted payout; US Treasury convention",
