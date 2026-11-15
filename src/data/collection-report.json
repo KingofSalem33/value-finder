@@ -1,6 +1,6 @@
 {
   "modelVersion": "fcff-2.1.0",
-  "checkedAt": "2026-11-14T17:59:49.933Z",
+  "checkedAt": "2026-11-15T18:50:40.518Z",
   "scope": "Extraction, source hashes and calculation checks; independent accounting review and forecast accuracy are not established.",
   "results": [
     {
@@ -8,7 +8,7 @@
       "periodEnd": "2026-09-26",
       "annualPeriods": 10,
       "specialized": false,
-      "inputDigest": "5f5096846e8d9bdb44896805ca5b03c62eea7cf7dac821190cc599bf164dc736",
+      "inputDigest": "cd8f3576c29ca87608344831264b0a6d69cc8eb187d42004370bbfc78f1e9cd3",
       "perShare": 65.79282940508085,
       "findings": [
         "EXTRACTION_REVIEW",
@@ -27,7 +27,7 @@
       "periodEnd": "2026-09-26",
       "annualPeriods": 10,
       "specialized": false,
-      "inputDigest": "02b156888f6afa20b8e215969a678779b9f87e3fba087b7ea765678f1574ce46",
+      "inputDigest": "582dd3ec42807f906998810faaddbc43ff9e0b2fbb6c2620ebd52100a92e7250",
       "perShare": 102.11568888863302,
       "findings": [
         "EXTRACTION_REVIEW",
@@ -44,7 +44,7 @@
       "periodEnd": "2026-09-30",
       "annualPeriods": 10,
       "specialized": false,
-      "inputDigest": "f451ff266cb6fbfff771d6a669ab78d8c672068e9b93d33045aa7bde549ebad4",
+      "inputDigest": "e29af63f52e6cbe892f3075fa92fcd426908d3e6ebf8749ecd86d4825179c2ae",
       "perShare": 214.2759106346984,
       "findings": [
         "CAPITAL_CYCLE",
@@ -65,7 +65,7 @@
       "periodEnd": "2026-09-30",
       "annualPeriods": 10,
       "specialized": true,
-      "inputDigest": "cb6aa4d090febc16db89a59611e07f452b1a1fba6945a9093677623e40063fee",
+      "inputDigest": "9c559c512030909f16bf7ddaadebd60427809ec93558b0c0f8c41e9e02e7b60a",
       "perShare": null,
       "findings": [
         "MISSING_debt",
@@ -78,7 +78,7 @@
       "periodEnd": "2026-09-30",
       "annualPeriods": 10,
       "specialized": false,
-      "inputDigest": "005f0d2b0a309b88b49baafb72ee13c195f1296c3e5e971d7771e4deae6641de",
+      "inputDigest": "be782ce7ff02fafcb3810d303531c619caa5b98795195e6c6fc08a71da927221",
       "perShare": 61.91834455101145,
       "findings": [
         "EXTRACTION_REVIEW",
@@ -96,7 +96,7 @@
       "periodEnd": "2026-07-31",
       "annualPeriods": 10,
       "specialized": false,
-      "inputDigest": "a4376d6b80e3b3762ffdbc866256ec73dda991853d4c32632dad20e662b6e53f",
+      "inputDigest": "cfea3e485a12ac4b7ff0bb46131946b88eaafab1f1d3666d954b761b25003923",
       "perShare": 305.420266021768,
       "findings": [
         "EXTRACTION_REVIEW",
@@ -114,7 +114,7 @@
       "periodEnd": "2026-09-30",
       "annualPeriods": 10,
       "specialized": false,
-      "inputDigest": "8451d12ff0ddf4cf28a530ffeac43663053473ba6d71254be5d126022f6d4c1c",
+      "inputDigest": "b721994cf09cb5ed69bbb1cc799157fced5b94795218ffa1835e8b61d0a8459b",
       "perShare": 51.05855804759069,
       "findings": [
         "CAPITAL_CYCLE",
