@@ -1,10 +1,10 @@
 {
   "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value=2026": {
-    "sha256": "08ec09ef54a5ede5dc53af04804e634e7fdfd356e4a75610482cb73f4e4291ea",
-    "retrievedAt": "2026-11-26T21:29:38.781Z",
+    "sha256": "9e001161ac6b994da31d322fe1d2e98a47520899cd8051e961417c97e256427d",
+    "retrievedAt": "2026-11-27T21:16:08.706Z",
     "etag": null,
     "lastModified": null,
-    "bytes": 349843
+    "bytes": 351388
   },
   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/ctryprem.html": {
     "sha256": "ea30d57fc0858072c520930e2e5b8a5e5affdce81f7f2e1f9054efab79959dbc",
@@ -15,7 +15,7 @@
   },
   "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/home.htm": {
     "sha256": "c1cb61e0eebdd16b97a64a199777d5001ff854e793c2e2c373ac9de4fc290d17",
-    "retrievedAt": "2026-11-25T21:40:21.398Z",
+    "retrievedAt": "2026-11-27T21:16:09.261Z",
     "etag": null,
     "lastModified": null,
     "bytes": 17007
